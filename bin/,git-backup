@@ -1,8 +1,9 @@
 #!/usr/local/bin/bash
-rm -rf ~/git-dotfiles/config-dots/ ~/git-dotfiles/bin/  
+rm -rf ~/git-dotfiles/config-dots/ ~/git-dotfiles/bin/  ~/git-dotfiles/etc/
 cp -r ~/.config ~/git-dotfiles/config-dots/
 cd ~/git-dotfiles
 cp ../.zshrc ./
 cp -r ../bin/ ./bin
+cp -r /etc ./etc/
 git add .
 echo "Now: cd ~/git-dotfiles; git commit and git push"
