@@ -1,9 +1,11 @@
 #!/usr/local/bin/bash
-rm -rf ~/git-dotfiles/config-dots/ ~/git-dotfiles/bin/  ~/git-dotfiles/etc/
+rm -rf ~/git-dotfiles/config-dots/ ~/git-dotfiles/bin/  ~/git-dotfiles/etc/ ~/git-dotfiles/loader/
 cp -r ~/.config ~/git-dotfiles/config-dots/
 cd ~/git-dotfiles
 cp ../.zshrc ./
 cp -r ../bin/ ./bin
 cp -r /etc ./etc/
+mkdir loader
+cp -r /boot/loader.* loader/
 git add .
 echo "Now: cd ~/git-dotfiles; git commit and git push"
