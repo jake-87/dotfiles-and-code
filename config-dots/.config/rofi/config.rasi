@@ -1,4 +1,0 @@
-configuration {
-	theme: "/usr/local/share/rofi/themes/purple.rasi";
-}
-@import "/usr/local/share/rofi/themes/DarkBlue.rasi"
