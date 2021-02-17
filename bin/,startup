@@ -1,0 +1,15 @@
+#! /usr/local/bin/bash
+terminator -x ,meme-ticker &
+sleep 0.51
+terminator -x nyancat &
+sleep 0.51
+terminator -x htop &
+sleep 0.51;
+doas ydotool key super+left # >> /dev/zero
+doas ydotool key super+left
+doas ydotool key super+left
+#doas ydotool key super+left
+sleep 0.51
+doas ydotool key super+shift+down
+clear
+pfetch
