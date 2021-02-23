@@ -1,5 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =3
+let g:netrw_dirhistcnt =4
+let g:netrw_dirhist_4='/home/freebsd/coding/building-from-src/Mindustry-master/gradle/wrapper'
 let g:netrw_dirhist_3='/home/freebsd/.config/sway/scripts'
 let g:netrw_dirhist_2='/etc/X11'
 let g:netrw_dirhist_1='/home/freebsd/bin'
@@ -9,4 +10,3 @@ let g:netrw_dirhist_8='/home/freebsd/.oh-my-zsh/plugins/command-not-found'
 let g:netrw_dirhist_7='/home/freebsd/.oh-my-zsh/plugins'
 let g:netrw_dirhist_6='/home/freebsd/.oh-my-zsh'
 let g:netrw_dirhist_5='/home/freebsd/.oh-my-zsh/plugins/command-not-found'
-let g:netrw_dirhist_4='/home/freebsd/.oh-my-zsh/plugins'

@@ -112,7 +112,6 @@ if test -z "${XDG_RUNTIME_DIR}"; then export XDG_RUNTIME_DIR=/tmp/${UID}-runtime
 fi
 
 alias la="ls -lah"
-alias mount="doas mount" &&  alias umount="doas umount"
 alias ":q"="exit"
 # ,theme.sh brogrammer
 alias init="doas init"
@@ -123,5 +122,9 @@ alias vim=nvim
 alias vi=nvim
 alias ,chmodhelp="ls -lah $HOME/coding/chmod-tests/"
 # ,donut &
-alias ,upgrade="doas pkg update && doas pkg upgrade && clear && pfetch"
+alias ,upgrade="doas pkg update && doas pkg upgrade && pfetch"
+alias ,clone-src-current="doas git clone https://git.freebsd.org/src.git /usr/src"
 export EDITOR=nvim
+alias ,nightly=",upgrade && doas ,auto-backup && cd /usr/src && doas git pull && echo \"When you want too, cd to /usr/src and run \",building-inc\" to know how to build the lastest kernel and world.\""
+alias ",building-inc"="echo \"cd /usr/src, make -j5 buildworld, make -j5 kernel, reboot to new kernel, cd /usr/src again, make -j5 installworld, mergemaster -Ui, done.\""
+cd

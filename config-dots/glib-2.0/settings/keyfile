@@ -9,7 +9,7 @@ show-type-column=true
 sidebar-width=156
 sort-column='name'
 sort-directories-first=false
-sort-order='ascending'
+sort-order='descending'
 type-format='category'
 
 [org/gtk/settings/color-chooser]

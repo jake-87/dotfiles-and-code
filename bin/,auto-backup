@@ -6,9 +6,9 @@ backupdate=$(date -I) || echo "date set failed" && failvar=1
 rm -rf $backupdate-backup/ || echo "directory already exists and rm could not remove." && failvar=1
 mkdir $backupdate-backup || echo "mkdir failed." && failvar=1
 #mv /home/freebsd/.cache /tmp/freebsd-.cache
-tar --exclude='/home/freebsd/.cache' --exclude='/home/freebsd/linux-isos/*' --exclude='/home/freebsd/building-from-src/*' -cvf /mnt/$backupdate-backup/full-home-backup.tar /home/freebsd/ || echo "tar failed" && failvar=1;
-tar cvf /mnt/$backupdate-backup/full-etc-backup.tar /etc || echo "etc tar failed" && failvar=1
-tar cvf /mnt/$backupdate-backup/full-loader-conf-backup.tar /boot/loader* || echo "loader tar failed" && failvar=1
+tar --exclude='/home/freebsd/.mozilla' --exclude='/home/freebsd/.cache' --exclude='/home/freebsd/linux-isos/*' --exclude='/home/freebsd/coding/building-from-src/*' --exclude='*cache*' -cvf /mnt/$backupdate-backup/full-home-backup.tar /home/freebsd/ # || echo "tar failed" && failvar=1;
+tar -cvf /mnt/$backupdate-backup/full-etc-backup.tar /etc # || echo "etc tar failed" && failvar=1
+cp /boot/loader.conf /mnt/$backupdate-backup/loader.conf
 pkg prime-list >> /mnt/$backupdate-backup/all-installed-pkg.txt || echo "pkg info -aq failed" && failvar=1 #&& exit;
 cd / || echo "cd to / failed"  && failvar=1 #&& exit;
 #echo "backup completed successfully. backup is stored as \"$backupdate-backup\"."
@@ -16,9 +16,8 @@ sed -e ':a' -e 'N' -e '$!ba' -e 's/\n/ /g' /mnt/$backupdate-backup/all-installed
 rm /mnt/$backupdate-backup/all-installed-pkg.txt || echo "rm failed" && failvar=1
 echo "#! /usr/local/bin/bash" > /mnt/$backupdate-backup/install-all-pkg.sh || echo "cat failed" && failvar=1
 echo "cat installed-packages.txt | xargs pkg install" >> /mnt/$backupdate-backup/install-all-pkg.sh || echo "second cat failed"  && failvar=1
-chmod a+x /mnt/$backupdate-backup/install-all-pkg.sh || echo "chmod failed"  && failvar=1
-umount /mnt || echo "umount failed" && failvar=1 #&& exit;
-echo "Done. If this number :$failvar is 1, then something went wrong."
+chmod a+x /mnt/$backupdate-backup/install-all-pkg.sh || echo "chmod failed" && failvar=1
+umount /mnt # || echo "umount failed" && failvar=1 #&& exit;
 #if [[ "$failvar" != "1" ]]; 
 #then
 #	echo "backup completed successfully. backup is stored as \"$backupdate-backup\"."

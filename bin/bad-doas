@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+bad-doas ()
+{
+	doas $@
+}
+bad-doas $@
