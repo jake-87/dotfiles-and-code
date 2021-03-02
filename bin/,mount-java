@@ -1,0 +1,1 @@
+doas mount -t procfs proc /proc && doas mount -t fdescfs fdesc /dev/fd

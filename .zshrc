@@ -8,7 +8,7 @@ export ZSH="/home/freebsd/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="kardan"
+ZSH_THEME="minimal"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -68,7 +68,7 @@ ZSH_THEME="kardan"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git zsh-interactive-cd )
 
 source $ZSH/oh-my-zsh.sh
 
@@ -128,3 +128,4 @@ export EDITOR=nvim
 alias ,nightly=",upgrade && doas ,auto-backup && cd /usr/src && doas git pull && echo \"When you want too, cd to /usr/src and run \",building-inc\" to know how to build the lastest kernel and world.\""
 alias ",building-inc"="echo \"cd /usr/src, make -j5 buildworld, make -j5 kernel, reboot to new kernel, cd /usr/src again, make -j5 installworld, mergemaster -Ui, done.\""
 cd
+alias back=-

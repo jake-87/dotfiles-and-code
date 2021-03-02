@@ -96,9 +96,9 @@
       </startupnotify>
     </action>
   </item>
-  <item label="Konsole">
+  <item label="Terminator">
     <action name="Execute">
-      <command>konsole</command>
+      <command>terminator</command>
       <startupnotify>
         <enabled>yes</enabled>
       </startupnotify>

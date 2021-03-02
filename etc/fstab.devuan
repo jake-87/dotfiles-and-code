@@ -1,6 +1,0 @@
-## Mountpoint(s) for the Devuan jail
-# Dev   Mountpoint      FS              Options         Dump / Check
-
-linprocfs       /opt/jails/devuan/proc  linprocfs       rw,late 0 0
-linsysfs        /opt/jails/devuan/sys   linsysfs        rw,late 0 0
-tmpfs           /opt/jails/devuan/tmp   tmpfs   rw,late,mode=1777 0 0

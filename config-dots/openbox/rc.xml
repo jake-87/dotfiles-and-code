@@ -297,14 +297,9 @@
       <direction>down</direction>
     </action>
   </keybind>
-
   <!-- Keybindings for running applications -->
-  <keybind key="W-e">
+  <keybind key="W-r">
     <action name="Execute">
-      <startupnotify>
-        <enabled>true</enabled>
-        <name>Konqueror</name>
-      </startupnotify>
       <command>rofi -show run</command>
     </action>
   </keybind>
