@@ -1,7 +1,8 @@
 #!/usr/local/bin/bash
-rm -rf ~/git-dotfiles/config-dots/ ~/git-dotfiles/bin/  ~/git-dotfiles/etc/ ~/git-dotfiles/loader/
+rm -rf ~/git-dotfiles/config-dots/ ~/git-dotfiles/bin/  ~/git-dotfiles/etc/ ~/git-dotfiles/loader/ ~/git-dotfiles/coding
 cp -r ~/.config ~/git-dotfiles/config-dots/
 cd ~/git-dotfiles
+cp -r ../coding/c-code ./
 cp ../.zshrc ./
 cp -r ../bin/ ./bin
 cp -r /etc ./etc/
