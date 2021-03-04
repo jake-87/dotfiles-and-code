@@ -24,12 +24,20 @@ int main()
 		sorted = 0;
 		for (i = 0; i < (MAX - 1); i++)
 		{
-			if (i + 1 > MAX) {break;}
 			if (data[i] > data[i + 1])
 			{
 				tmp = data[i];
 				data[i] = data[i + 1];
 				data[i + 1] = tmp;
+			}
+		}
+		for (i = MAX - 1; i > 1; i--)
+		{
+			if (data[i] < data[i - 1])
+			{
+				tmp = data[i];
+				data[i] = data[i - 1];
+				data[i - 1] = tmp;
 			}
 		}
 		for (i = 0; i < MAX - 1; i++)
@@ -52,4 +60,4 @@ int main()
 	}
 	printf("\n");
 	printf("This took %d iterations.\n",counter);
-}
+
