@@ -220,3 +220,4 @@ gaps inner 20
 gaps outer 30
 output * bg /home/freebsd/.config/sway/backgrounds/star-shooting.png fit
 include /usr/local/etc/sway/config.d/*
+exec terminator

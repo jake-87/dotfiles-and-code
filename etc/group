@@ -26,7 +26,7 @@ _pflogd:*:64:
 _dhcp:*:65:
 uucp:*:66:
 dialer:*:68:
-network:*:69:
+network:*:69:freebsd
 audit:*:77:
 www:*:80:
 ntpd:*:123:
@@ -45,3 +45,5 @@ sddm:*:219:
 polkitd:*:565:
 colord:*:970:
 cyrus:*:60:
+slurm:*:468:
+vboxusers:*:920:freebsd

@@ -1,12 +1,16 @@
 #include <stdio.h>
-#define MAX 20
+//#define MAX 20
 int main()
 {
+	int MAX;
+	printf("What is MAX?");
+	scanf("%d",&MAX);
 	int data[MAX];
 	int i;
 	int counter = 0;
 	int sorted = 0;
 	int tmp;
+	int arrayAccess = 0;
 	printf("Enter %d numbers, one at a time:\n",MAX);
 	for (i = 0; i < MAX; i++)
 	{
@@ -26,6 +30,7 @@ int main()
 		{
 			if (data[i] > data[i + 1])
 			{
+				arrayAccess = arrayAccess + 6;
 				tmp = data[i];
 				data[i] = data[i + 1];
 				data[i + 1] = tmp;
@@ -35,6 +40,7 @@ int main()
 		{
 			if (data[i] < data[i - 1])
 			{
+				arrayAccess = arrayAccess + 6;
 				tmp = data[i];
 				data[i] = data[i - 1];
 				data[i - 1] = tmp;
@@ -46,6 +52,7 @@ int main()
 			if ( data[i] > data[i + 1])
 			{
 				sorted = 1;
+				arrayAccess = arrayAccess + 2;
 			}
 			else 
 			{
@@ -59,5 +66,5 @@ int main()
 		printf("%d ",data[i]);
 	}
 	printf("\n");
-	printf("This took %d iterations.\n",counter);
-
+	printf("This took %d iteration(s) and %d array accesses.\n",counter,arrayAccess);
+}

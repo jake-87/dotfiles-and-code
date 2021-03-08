@@ -129,3 +129,4 @@ alias ,nightly=",upgrade && doas ,auto-backup && cd /usr/src && doas git pull &&
 alias ",building-inc"="echo \"cd /usr/src, make -j5 buildworld, make -j5 kernel, reboot to new kernel, cd /usr/src again, make -j5 installworld, mergemaster -Ui, done.\""
 cd
 alias back=-
+clear
