@@ -1,0 +1,40 @@
+VirtualBox XPCOM Server 5.2.44 r139111 freebsd.amd64 (Feb 28 2021 22:54:51) release log
+00:00:00.001786 main     Log opened 2021-03-08T10:45:49.776564000Z
+00:00:00.001788 main     Build Type: release
+00:00:00.001801 main     OS Product: FreeBSD
+00:00:00.001806 main     OS Release: 13.0-BETA3-p1
+00:00:00.001810 main     OS Version: FreeBSD 13.0-BETA3-p1 #0: Tue Feb 23 17:46:40 UTC 2021     root@amd64-builder.daemonology.net:/usr/obj/usr/src/amd64.amd64/sys/GENERIC
+00:00:00.001832 main     Host RAM: 3843MB (3.7GB) total, 3245MB (3.1GB) available
+00:00:00.001839 main     Executable: /usr/local/lib/virtualbox/VBoxSVC
+00:00:00.001839 main     Process ID: 1475
+00:00:00.001840 main     Package type: BSD_64BITS_GENERIC (OSE)
+00:00:00.003758 main     IPC socket path: /tmp/.vbox-freebsd-ipc/ipcd
+00:00:00.106703 nspr-2   VirtualBox: object creation starts
+00:00:00.106818 nspr-2   Home directory: '/home/freebsd/.config/VirtualBox'
+00:00:00.124933 nspr-2   Loading settings file "/home/freebsd/.config/VirtualBox/VirtualBox.xml" with version "1.12-freebsd"
+00:00:01.188429 nspr-2   NAT: resolv.conf: nameserver 192.168.0.1
+00:00:01.188508 nspr-2   HostDnsMonitor::updateInfo
+00:00:01.188529 nspr-2   HostDnsMonitor: old information
+00:00:01.188536 nspr-2     no server entries
+00:00:01.188542 nspr-2     no domain set
+00:00:01.188547 nspr-2     no search string entries
+00:00:01.188552 nspr-2   HostDnsMonitor: new information
+00:00:01.188559 nspr-2     server 1: 192.168.0.1
+00:00:01.188565 nspr-2     domain: home
+00:00:01.188570 nspr-2     search string 1: home
+00:00:01.190007 nspr-2   HostPowerServiceLinux: DBus connection Error (Failed to connect to socket /var/run/dbus/system_bus_socket: No such file or directory)
+00:00:01.193927 nspr-2   VD: VDInit finished with VINF_SUCCESS
+00:00:01.194060 nspr-2   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={0eb668d2-495e-5a36-8890-29999b5f030c} aComponent={SystemPropertiesWrap} aText={Cannot determine default Guest Additions ISO location. Most likely they are not available}, preserve=false aResultDetail=0
+00:00:01.367836 nspr-2   Loading settings file "/home/freebsd/VirtualBox VMs/debian/debian.vbox" with version "1.16-freebsd"
+00:00:01.368608 nspr-2   VirtualBox: object created
+00:00:04.404110 nspr-5   ERROR [COM]: aRC=VBOX_E_OBJECT_NOT_FOUND (0x80bb0001) aIID={edba9d10-45d8-b440-1712-46ac0c9bc4c5} aComponent={ExtPackManagerWrap} aText={No extension pack by the name 'Oracle VM VirtualBox Extension Pack' was found}, preserve=false aResultDetail=0
+00:00:09.299075 nspr-6   Saving settings file "/home/freebsd/VirtualBox VMs/debian/debian.vbox" with version "1.16-freebsd"
+00:00:11.513749 nspr-6   Saving settings file "/home/freebsd/VirtualBox VMs/debian/debian.vbox" with version "1.16-freebsd"
+00:00:14.400306 nspr-7   Saving settings file "/home/freebsd/VirtualBox VMs/debian/debian.vbox" with version "1.16-freebsd"
+00:44:20.266486 nspr-2   Saving settings file "/home/freebsd/VirtualBox VMs/debian/debian.vbox" with version "1.16-freebsd"
+00:44:20.380243 nspr-7   Saving settings file "/home/freebsd/VirtualBox VMs/debian/debian.vbox" with version "1.16-freebsd"
+00:44:26.981154 nspr-4   
+00:44:26.981158 nspr-4   !!Assertion Failed!!
+00:44:26.981158 nspr-4   Expression: state <= 1 && ( (state == 0 && count == 0) || (state == 1 && count < PR_UINT32_MAX/2))
+00:44:26.981159 nspr-4   Location  : /wrkdirs/usr/ports/emulators/virtualbox-ose/work/VirtualBox-5.2.44/src/libs/xpcom18a4/ipc/ipcd/extensions/dconnect/src/ipcDConnectService.cpp(3442) virtual nsrefcnt ipcDConnectService::AddRef()
+00:44:26.981258 nspr-4   AddRef: illegal refcnt=3221225469 state=2

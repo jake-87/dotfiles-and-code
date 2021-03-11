@@ -8,16 +8,22 @@
 <VirtualBox xmlns="http://www.virtualbox.org/" version="1.12-freebsd">
   <Global>
     <ExtraData>
-      <ExtraDataItem name="GUI/LastWindowPosition" value="400,225,800,450"/>
+      <ExtraDataItem name="GUI/GroupDefinitions/" value="m=c56c2293-9520-42c4-acd5-37ddead7850a,m=c5c00272-3175-41dd-bba5-00580de0cc45"/>
+      <ExtraDataItem name="GUI/HostNetworkManager/Details/Expanded" value="true"/>
+      <ExtraDataItem name="GUI/LastItemSelected" value="m=fedora"/>
+      <ExtraDataItem name="GUI/LastWindowPosition" value="400,225,573,777,max"/>
       <ExtraDataItem name="GUI/RecentFolderCD" value="/home/freebsd/linux-stuff"/>
-      <ExtraDataItem name="GUI/RecentListCD" value="/home/freebsd/linux-stuff/debian-10.8.0-amd64-netinst.iso,/home/freebsd/linux-stuff/nixos-minimal-20.09.3383.37b47da04ca-x86_64-linux.iso,/home/freebsd/linux-stuff/slackware64-14.2-install-dvd.iso"/>
-      <ExtraDataItem name="GUI/SplitterSizes" value="265,531"/>
+      <ExtraDataItem name="GUI/RecentListCD" value="/home/freebsd/linux-stuff/debian-10.8.0-amd64-netinst.iso,/home/freebsd/linux-stuff/Fedora-Server-dvd-x86_64-33-1.2.iso,/home/freebsd/linux-stuff/Fedora-Server-netinst-x86_64-33-1.2.iso,/home/freebsd/linux-stuff/nixos-minimal-20.09.3383.37b47da04ca-x86_64-linux.iso,/home/freebsd/linux-stuff/slackware64-14.2-install-dvd.iso"/>
+      <ExtraDataItem name="GUI/SplitterSizes" value="244,490"/>
       <ExtraDataItem name="GUI/Statusbar" value="false"/>
-      <ExtraDataItem name="GUI/SuppressMessages" value="confirmInputCapture"/>
+      <ExtraDataItem name="GUI/SuppressMessages" value="confirmInputCapture,remindAboutMouseIntegration,remindAboutAutoCapture"/>
       <ExtraDataItem name="GUI/Toolbar/MachineTools/Order" value="None"/>
+      <ExtraDataItem name="HostOnly/vboxnet0/IPAddress" value="192.168.1.1"/>
+      <ExtraDataItem name="HostOnly/vboxnet0/IPNetMask" value="255.255.255.0"/>
     </ExtraData>
     <MachineRegistry>
-      <MachineEntry uuid="{8106e445-f441-4f2d-bf8b-32deb639acf9}" src="/home/freebsd/VirtualBox VMs/debian/debian.vbox"/>
+      <MachineEntry uuid="{c5c00272-3175-41dd-bba5-00580de0cc45}" src="/home/freebsd/VirtualBox VMs/fedora/fedora.vbox"/>
+      <MachineEntry uuid="{c56c2293-9520-42c4-acd5-37ddead7850a}" src="/home/freebsd/VirtualBox VMs/debian/debian.vbox"/>
     </MachineRegistry>
     <NetserviceRegistry>
       <DHCPServers>

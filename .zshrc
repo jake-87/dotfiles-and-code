@@ -87,7 +87,7 @@ source $ZSH/oh-my-zsh.sh
 # fi
 
 # Compilation flags
-# export ARCHFLAGS="-arch x86_64"
+export ARCHFLAGS="-arch x86_64"
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
@@ -95,15 +95,9 @@ source $ZSH/oh-my-zsh.sh
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
-alias zshconfig="nvim ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias pint="doas pkg install -y"
-alias sudo="doas"
-alias forkbomb="echo warning: this will crash the system. to continue, type out this: iwanttocrashthissystem"
-alias iwanttocrashthissystem=":(){: |: &};:"
-alias nms="nms -a"
 alias nano="nvim"
-alias sauce="source .zshrc"
 if test -z "${XDG_RUNTIME_DIR}"; then export XDG_RUNTIME_DIR=/tmp/${UID}-runtime-dir
 	if ! test -d "${XDG_RUNTIME_DIR}"; then
 		mkdir "${XDG_RUNTIME_DIR}"
@@ -112,10 +106,10 @@ if test -z "${XDG_RUNTIME_DIR}"; then export XDG_RUNTIME_DIR=/tmp/${UID}-runtime
 fi
 
 alias la="ls -lah"
-alias ":q"="exit"
 # ,theme.sh brogrammer
 alias init="doas init"
 alias cpm="cc -Wall -pipe -march=native -O2"
+alias csm="cc -Oz -s -ffast-math -m32 -march=x86-64 -v -fno-exceptions -ffunction-sections -fdata-sections"
 export PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin:/home/freebsd/bin:/home/freebsd/.cargo/bin:/usr/local/lib/qt5/bin/qmake
 export QMAKESPEC=freebsd-clang
 alias vim=nvim
@@ -127,6 +121,4 @@ alias ,clone-src-current="doas git clone https://git.freebsd.org/src.git /usr/sr
 export EDITOR=nvim
 alias ,nightly=",upgrade && doas ,auto-backup && cd /usr/src && doas git pull && echo \"When you want too, cd to /usr/src and run \",building-inc\" to know how to build the lastest kernel and world.\""
 alias ",building-inc"="echo \"cd /usr/src, make -j5 buildworld, make -j5 kernel, reboot to new kernel, cd /usr/src again, make -j5 installworld, mergemaster -Ui, done.\""
-cd
 alias back=-
-clear

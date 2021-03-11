@@ -1,26 +1,3 @@
-VirtualBox GUI VM Selector Window 5.2.44 r139111 freebsd.amd64 (Feb 28 2021 22:54:51) release log
-00:00:03.014186 Log opened 2021-03-08T09:44:21.689980000Z
-00:00:03.014187 Build Type: release
-00:00:03.014199 OS Product: FreeBSD
-00:00:03.014203 OS Release: 13.0-BETA3-p1
-00:00:03.014207 OS Version: FreeBSD 13.0-BETA3-p1 #0: Tue Feb 23 17:46:40 UTC 2021     root@amd64-builder.daemonology.net:/usr/obj/usr/src/amd64.amd64/sys/GENERIC
-00:00:03.014223 Host RAM: 3843MB (3.7GB) total, 3227MB (3.1GB) available
-00:00:03.014226 Executable: /usr/local/lib/virtualbox/VirtualBox
-00:00:03.014226 Process ID: 1345
-00:00:03.014227 Package type: BSD_64BITS_GENERIC (OSE)
-00:00:03.014254 Qt version: 5.15.2
-00:00:03.321362 GUI: UIMediumEnumerator: Medium-enumeration started...
-00:00:03.785934 GUI: UIMediumEnumerator: Medium-enumeration finished!
-00:00:03.819455 GUI: UIDesktopWidgetWatchdog::sltHandleHostScreenAvailableGeometryCalculated: Screen 0 work area is actually resized to: 50x73 x 1500x377
-00:02:47.160990 GUI: UIMediumEnumerator: Medium-enumeration started...
-00:02:47.323419 GUI: UIMediumEnumerator: Medium-enumeration finished!
-00:03:12.859283 GUI: UIMediumEnumerator: Medium-enumeration finished!
-00:03:22.771589 GUI: UIMediumEnumerator: Medium-enumeration started...
-00:03:22.881789 GUI: UIMediumEnumerator: Medium-enumeration finished!
-00:03:28.443121 GUI: UIMediumEnumerator: Medium-enumeration finished!
-00:03:35.820676 GUI: UIMediumEnumerator: Medium-enumeration started...
-00:03:35.926810 GUI: UIMediumEnumerator: Medium-enumeration finished!
-00:03:42.899174 GUI: UIMediumEnumerator: Medium-enumeration finished!
-00:04:42.582483 GUI: UIMediumEnumerator: Medium-enumeration started...
-00:04:42.687798 GUI: UIMediumEnumerator: Medium-enumeration finished!
-00:07:09.821825 GUI: UIMediumEnumerator: Medium-enumeration finished!
+01:33:43.787797 Log continuation - Log started 2021-03-11T08:11:18.971110000Z
+01:33:44.100622 GUI: UIMediumEnumerator: Medium-enumeration finished!
+01:33:49.343506 ERROR [COM]: aRC=NS_ERROR_UNEXPECTED (0x8000ffff) aIID={7844aa05-b02e-4cdd-a04f-ade4a762e6b7} aComponent={SessionWrap} aText={The session is not locked (session state: Unlocked)}, preserve=false aResultDetail=0
