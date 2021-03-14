@@ -1,32 +1,31 @@
 VirtualBox XPCOM Server 5.2.44 r139111 freebsd.amd64 (Feb 28 2021 22:54:51) release log
-00:00:00.003083 main     Log opened 2021-03-12T23:26:02.834806000Z
-00:00:00.003085 main     Build Type: release
-00:00:00.003099 main     OS Product: FreeBSD
-00:00:00.003103 main     OS Release: 13.0-BETA3-p1
-00:00:00.003107 main     OS Version: FreeBSD 13.0-BETA3-p1 #0: Tue Feb 23 17:46:40 UTC 2021     root@amd64-builder.daemonology.net:/usr/obj/usr/src/amd64.amd64/sys/GENERIC
-00:00:00.003131 main     Host RAM: 3843MB (3.7GB) total, 3443MB (3.3GB) available
-00:00:00.003138 main     Executable: /usr/local/lib/virtualbox/VBoxSVC
-00:00:00.003138 main     Process ID: 1040
-00:00:00.003139 main     Package type: BSD_64BITS_GENERIC (OSE)
-00:00:00.005057 main     IPC socket path: /tmp/.vbox-freebsd-ipc/ipcd
-00:00:00.111301 nspr-2   VirtualBox: object creation starts
-00:00:00.111413 nspr-2   Home directory: '/home/freebsd/.config/VirtualBox'
-00:00:00.249643 nspr-2   Loading settings file "/home/freebsd/.config/VirtualBox/VirtualBox.xml" with version "1.12-freebsd"
-00:00:01.312464 nspr-2   NAT: resolv.conf: nameserver 127.0.0.1
-00:00:01.312495 nspr-2   NAT: resolv.conf: ignoring "options edns0"
-00:00:01.312539 nspr-2   HostDnsMonitor::updateInfo
-00:00:01.312560 nspr-2   HostDnsMonitor: old information
-00:00:01.312568 nspr-2     no server entries
-00:00:01.312574 nspr-2     no domain set
-00:00:01.312579 nspr-2     no search string entries
-00:00:01.312584 nspr-2   HostDnsMonitor: new information
-00:00:01.312589 nspr-2     server 1: 127.0.0.1
-00:00:01.312601 nspr-2     domain: home
-00:00:01.312606 nspr-2     search string 1: home
-00:00:01.314034 nspr-2   HostPowerServiceLinux: DBus connection Error (Failed to connect to socket /var/run/dbus/system_bus_socket: No such file or directory)
-00:00:01.391454 nspr-2   VD: VDInit finished with VINF_SUCCESS
-00:00:01.391640 nspr-2   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={0eb668d2-495e-5a36-8890-29999b5f030c} aComponent={SystemPropertiesWrap} aText={Cannot determine default Guest Additions ISO location. Most likely they are not available}, preserve=false aResultDetail=0
-00:00:01.522185 nspr-2   Loading settings file "/home/freebsd/VirtualBox VMs/fedora/fedora.vbox" with version "1.16-freebsd"
-00:00:01.533464 nspr-2   Loading settings file "/home/freebsd/VirtualBox VMs/debian/debian.vbox" with version "1.16-freebsd"
-00:00:01.533967 nspr-2   VirtualBox: object created
-00:05:33.400678 nspr-3   Saving settings file "/home/freebsd/VirtualBox VMs/debian/debian.vbox" with version "1.16-freebsd"
+00:00:00.020593 main     Log opened 2021-03-14T00:57:31.769976000Z
+00:00:00.020595 main     Build Type: release
+00:00:00.020609 main     OS Product: FreeBSD
+00:00:00.020613 main     OS Release: 13.0-BETA3-p1
+00:00:00.020618 main     OS Version: FreeBSD 13.0-BETA3-p1 #0: Tue Feb 23 17:46:40 UTC 2021     root@amd64-builder.daemonology.net:/usr/obj/usr/src/amd64.amd64/sys/GENERIC
+00:00:00.020640 main     Host RAM: 3843MB (3.7GB) total, 3434MB (3.3GB) available
+00:00:00.020647 main     Executable: /usr/local/lib/virtualbox/VBoxSVC
+00:00:00.020647 main     Process ID: 1004
+00:00:00.020648 main     Package type: BSD_64BITS_GENERIC (OSE)
+00:00:00.022555 main     IPC socket path: /tmp/.vbox-freebsd-ipc/ipcd
+00:00:00.130982 nspr-2   VirtualBox: object creation starts
+00:00:00.131094 nspr-2   Home directory: '/home/freebsd/.config/VirtualBox'
+00:00:00.205665 nspr-2   Loading settings file "/home/freebsd/.config/VirtualBox/VirtualBox.xml" with version "1.12-freebsd"
+00:00:01.269526 nspr-2   NAT: resolv.conf: nameserver 127.0.0.1
+00:00:01.269544 nspr-2   NAT: resolv.conf: ignoring "options edns0"
+00:00:01.269587 nspr-2   HostDnsMonitor::updateInfo
+00:00:01.269606 nspr-2   HostDnsMonitor: old information
+00:00:01.269613 nspr-2     no server entries
+00:00:01.269618 nspr-2     no domain set
+00:00:01.269623 nspr-2     no search string entries
+00:00:01.269628 nspr-2   HostDnsMonitor: new information
+00:00:01.269632 nspr-2     server 1: 127.0.0.1
+00:00:01.269644 nspr-2     domain: home
+00:00:01.269649 nspr-2     search string 1: home
+00:00:01.271059 nspr-2   HostPowerServiceLinux: DBus connection Error (Failed to connect to socket /var/run/dbus/system_bus_socket: No such file or directory)
+00:00:01.345898 nspr-2   VD: VDInit finished with VINF_SUCCESS
+00:00:01.346045 nspr-2   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={0eb668d2-495e-5a36-8890-29999b5f030c} aComponent={SystemPropertiesWrap} aText={Cannot determine default Guest Additions ISO location. Most likely they are not available}, preserve=false aResultDetail=0
+00:00:01.478242 nspr-2   Loading settings file "/home/freebsd/VirtualBox VMs/fedora/fedora.vbox" with version "1.16-freebsd"
+00:00:01.499966 nspr-2   Loading settings file "/home/freebsd/VirtualBox VMs/debian/debian.vbox" with version "1.16-freebsd"
+00:00:01.500467 nspr-2   VirtualBox: object created
