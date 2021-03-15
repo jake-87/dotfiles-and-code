@@ -1,5 +1,5 @@
 #!/usr/local/bin/bash
-rm -rf ~/git-dotfiles/config-dots/ ~/git-dotfiles/bin/  ~/git-dotfiles/etc/ ~/git-dotfiles/loader/ ~/git-dotfiles/coding ~/git-dotfiles/PDC-science
+rm -rf ~/git-dotfiles/config-dots/ ~/git-dotfiles/bin/  ~/git-dotfiles/etc/ ~/git-dotfiles/loader/ ~/git-dotfiles/c-code/ ~/git-dotfiles/PDC-science/
 cp -r ~/.config ~/git-dotfiles/config-dots/
 cd ~/git-dotfiles
 cp -r ../PDC-science ./
