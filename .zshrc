@@ -109,7 +109,7 @@ alias la="ls -lah"
 # ,theme.sh brogrammer
 alias init="doas init"
 alias cpm="cc -Wall -pipe -march=native -O2"
-alias csm="cc -Oz -s -ffast-math -m32 -march=x86-64 -v -fno-exceptions -ffunction-sections -fdata-sections"
+alias csm="cc -Oz -s -ffast-math -m32 -march=x86-64 -fno-exceptions -ffunction-sections -fdata-sections"
 export PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin:/home/freebsd/bin:/home/freebsd/.cargo/bin:/usr/local/lib/qt5/bin/qmake
 export QMAKESPEC=freebsd-clang
 alias vim=nvim

@@ -14,21 +14,21 @@ int printarr(int array[MAX][MAX],int numOfElements, int bonds, int electrons)
 		for (j = 0;j < bonds; j++)
 		{
 			printf("Mol %d, bond %d has electron state %d.\n",i,j,array[i][j]);
-		}
+		} // loop through the array, printing every electron state
 	}
 	int chk = checkarr(array,bonds,numOfElements);
-	if (chk != 0)
+	if (chk != 0) // check the array
 	{
 		halt_and_catch_fire(funcname,"Checkarr");
 	}
-	printf("Number of electrons: %d\n",electrons);
+	printf("Number of electrons: %d\n",electrons); // print number of electons
 	return 0;
 }
 
 void halt_and_catch_fire(char * messed_up,char * whatmessedup)
 {
 	printf("%s messed up in func %s\n",whatmessedup,messed_up);
-	exit(1);
+	exit(1); //print what messed up in what function, and exit
 }
 int checkarr(int array[MAX][MAX], int bonds, int molecules)
 {
@@ -41,8 +41,8 @@ int checkarr(int array[MAX][MAX], int bonds, int molecules)
 		{
 			if (array[i][j] > 1)
 			{
-				return 1;
-			}
+				return 1; // loop through the array and see if any electrons are greater than 1, which would indicate an error
+			} //TODO: impliment more tests
 		}
 	}
 	return 0;
@@ -54,7 +54,7 @@ int main()
 	int bonds = 5;
 	int i, j;
 	int electrons = 0;
-	int molarr[MAX][MAX];
+	int molarr[MAX][MAX]; // init all variables; fairly sure i dont need malloc() or free() here
 	for (i = 0; i < MAX; i++)
 	{
 		if (i < molecules)
@@ -65,7 +65,7 @@ int main()
 			electrons++;
 			for (j = 2; j < MAX; j++)
 			{
-				molarr[i][j] = 0;
+				molarr[i][j] = 0; // init the array full of electrons
 			}
 		}
 		else
@@ -80,7 +80,7 @@ int main()
 	if (chk != 0)
 	{
 		char * whatmessedup = "checkarr was OOB";
-		halt_and_catch_fire(funcname,whatmessedup);
+		halt_and_catch_fire(funcname,whatmessedup); // check the array
 	}
-	printarr(molarr,MAX,bonds,electrons);
+	printarr(molarr,MAX,bonds,electrons); // print the array
 }
