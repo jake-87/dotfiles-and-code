@@ -48,20 +48,20 @@ int checkarr(int array[MAX][MAX], int bonds, int molecules)
 	}
 	return 0;
 }
-long factorial(long i)
+double factorial(double i)
 {
 	if (i < 0)
 	{
-		printf("You were trying to factorial a negative number silly! %ld.\n",i);
+		printf("You were trying to factorial a negative number silly! %f.\n",i);
 	}
 	if (i == 0)
 	{
 		return 1;
 	}
-	printf("i is %ld\n",i);
-	return (i * factorial(i - 1));
+	double a = (i * factorial(i - 1));
+	return a;
 }
-int kevinsmath(double numofelec, double numofelec2, double bonds)
+double kevinsmath(double numofelec, double numofelec2, double bonds)
 {
 	int c,d;
 	char * name = "kevinsmath";
@@ -83,10 +83,7 @@ int kevinsmath(double numofelec, double numofelec2, double bonds)
 	{
 		return 1;
 	}
-	double S = ((numofelec - numofelec2) / (abs(numofelec * numofelec2)) + c + d);
-	printf("num of elec is %f\n elec2 is %f\n",numofelec,numofelec2);
-	printf("1 - 2 is %f\n",numofelec - numofelec2);
-	printf("s is %f.\n",S);
+	double S = ((numofelec - numofelec2) / ( (abs(numofelec * numofelec2)) + c ) + d);
 	if (numofelec == 1.0)
 	{
 		double result = ((1/bonds) * (2/((factorial(bonds))/factorial(numofelec))) * (1/3) * (S));
@@ -99,12 +96,13 @@ int kevinsmath(double numofelec, double numofelec2, double bonds)
 	}
 	else 
 	{
-		double result = (((2 * (numofelec * ((factorial(bonds - 2))) / (factorial((bonds - 2) - (numofelec - 1))))) + ((factorial(numofelec)/(2 * factorial(numofelec - 2) * (factorial(bonds - 3) / (factorial(bonds - 3)) - (numofelec - 2)))))) / ((factorial(bonds))/(factorial(bonds - numofelec))));
+		double result = (((((2 * ((numofelec * ((factorial(bonds - 2))) / (factorial((bonds - 2) - (numofelec - 1)))))) + ((factorial(numofelec)/(2 * factorial(numofelec - 2) * (factorial(bonds - 3) / ((factorial(bonds - 3)) - (numofelec - 2))))))) / ((factorial(bonds))/(factorial(bonds - numofelec)))) / (factorial(bonds) / (factorial(bonds) - factorial(numofelec)))) * S * (bonds / numofelec) * (1/3));
 		if (result < -1 || result > 1)
 		{
 			printf("%f\n",result);
 			halt_and_catch_fire(name,"result from numofelec in current mol was OOB");
 		}
+		return result;
 	}
 }
 int main()
@@ -143,6 +141,6 @@ int main()
 		halt_and_catch_fire(funcname,whatmessedup); // check the array
 	}
 	printarr(molarr,MAX,bonds,electrons); // print the array
-	double result = kevinsmath( ( double ) 3.0, ( double ) 2.0, ( double ) 10.0);
-	printf("%g\n",result);
+	double result = kevinsmath(5,2,10);
+	printf("%f\n",result);
 }
