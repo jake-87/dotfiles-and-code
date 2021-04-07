@@ -122,3 +122,4 @@ export EDITOR=nvim
 alias ,nightly=",upgrade && doas ,auto-backup && cd /usr/src && doas git pull && echo \"When you want too, cd to /usr/src and run \",building-inc\" to know how to build the lastest kernel and world.\""
 alias ",building-inc"="echo \"cd /usr/src, make -j5 buildworld, make -j5 kernel, reboot to new kernel, cd /usr/src again, make -j5 installworld, mergemaster -Ui, done.\""
 alias back=-
+export pat="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"
