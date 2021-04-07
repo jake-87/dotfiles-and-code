@@ -1,9 +1,9 @@
 NAME=FreeBSD
-VERSION=13.0-BETA3
+VERSION=13.0-RC4
 VERSION_ID=13.0
 ID=freebsd
 ANSI_COLOR="0;31"
-PRETTY_NAME="FreeBSD 13.0-BETA3"
+PRETTY_NAME="FreeBSD 13.0-RC4"
 CPE_NAME=cpe:/o:freebsd:freebsd:13.0
 HOME_URL=https://FreeBSD.org/
 BUG_REPORT_URL=https://bugs.FreeBSD.org/

@@ -3,7 +3,7 @@ rm -rf ~/git-dotfiles/config-dots/ ~/git-dotfiles/bin/  ~/git-dotfiles/etc/ ~/gi
 cp -r ~/.config ~/git-dotfiles/config-dots/
 cd ~/git-dotfiles
 cp -r ../PDC-science ./
-cp -r ../coding/c-code ./
+cp -r ../c-code ./
 cp ../.zshrc ./
 cp -r ../bin/ ./bin
 cp -r /etc ./etc/

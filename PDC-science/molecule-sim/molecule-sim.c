@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <math.h>
 #define MAX 13
 void halt_and_catch_fire();
 int checkarr();
@@ -47,6 +48,65 @@ int checkarr(int array[MAX][MAX], int bonds, int molecules)
 	}
 	return 0;
 }
+long factorial(long i)
+{
+	if (i < 0)
+	{
+		printf("You were trying to factorial a negative number silly! %ld.\n",i);
+	}
+	if (i == 0)
+	{
+		return 1;
+	}
+	printf("i is %ld\n",i);
+	return (i * factorial(i - 1));
+}
+int kevinsmath(double numofelec, double numofelec2, double bonds)
+{
+	int c,d;
+	char * name = "kevinsmath";
+	if (numofelec != 0 && numofelec2 != 0)
+	{
+		c = 0;
+		d = 0;
+	}
+	else if (numofelec == 0 || numofelec2 == 0)
+	{
+		c = 1;
+		d = 1;
+	}
+	if (bonds == 0.0)
+	{
+		return 0;
+	}
+	if (bonds == numofelec)
+	{
+		return 1;
+	}
+	double S = ((numofelec - numofelec2) / (abs(numofelec * numofelec2)) + c + d);
+	printf("num of elec is %f\n elec2 is %f\n",numofelec,numofelec2);
+	printf("1 - 2 is %f\n",numofelec - numofelec2);
+	printf("s is %f.\n",S);
+	if (numofelec == 1.0)
+	{
+		double result = ((1/bonds) * (2/((factorial(bonds))/factorial(numofelec))) * (1/3) * (S));
+		if (result < -1 || result > 1)
+		{
+			printf("%f\n",result);
+			halt_and_catch_fire(name,"result from numofelec in current mol = 1 was OOB");
+		}
+		return result;
+	}
+	else 
+	{
+		double result = (((2 * (numofelec * ((factorial(bonds - 2))) / (factorial((bonds - 2) - (numofelec - 1))))) + ((factorial(numofelec)/(2 * factorial(numofelec - 2) * (factorial(bonds - 3) / (factorial(bonds - 3)) - (numofelec - 2)))))) / ((factorial(bonds))/(factorial(bonds - numofelec))));
+		if (result < -1 || result > 1)
+		{
+			printf("%f\n",result);
+			halt_and_catch_fire(name,"result from numofelec in current mol was OOB");
+		}
+	}
+}
 int main()
 {
 	char * funcname = "main";
@@ -83,4 +143,6 @@ int main()
 		halt_and_catch_fire(funcname,whatmessedup); // check the array
 	}
 	printarr(molarr,MAX,bonds,electrons); // print the array
+	double result = kevinsmath( ( double ) 3.0, ( double ) 2.0, ( double ) 10.0);
+	printf("%g\n",result);
 }

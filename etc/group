@@ -1,6 +1,6 @@
 # $FreeBSD$
 #
-wheel:*:0:root,freebsd
+wheel:*:0:root,fbsd,freebsd
 daemon:*:1:
 kmem:*:2:
 sys:*:3:
@@ -17,7 +17,7 @@ sshd:*:22:
 smmsp:*:25:
 mailnull:*:26:
 guest:*:31:
-video:*:44:freebsd
+video:*:44:fbsd,freebsd
 bind:*:53:
 unbound:*:59:
 proxy:*:62:
@@ -26,7 +26,7 @@ _pflogd:*:64:
 _dhcp:*:65:
 uucp:*:66:
 dialer:*:68:
-network:*:69:freebsd
+network:*:69:
 audit:*:77:
 www:*:80:
 ntpd:*:123:
@@ -35,15 +35,12 @@ hast:*:845:
 tests:*:977:
 nogroup:*:65533:
 nobody:*:65534:
-freebsd:*:1001:
+fbsd:*:1001:
 _tss:*:601:
 git_daemon:*:964:
 messagebus:*:556:
 avahi:*:558:
-cups:*:193:
-sddm:*:219:
 polkitd:*:565:
+cups:*:193:
 colord:*:970:
-cyrus:*:60:
-slurm:*:468:
-vboxusers:*:920:freebsd
+freebsd:*:1002:
