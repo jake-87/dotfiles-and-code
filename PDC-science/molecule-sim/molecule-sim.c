@@ -99,9 +99,6 @@ double kevinsmath(double numofelec, double numofelec2, double bonds)
 	else 
 	{
 		double result = ((numofelec / bonds) * (1.0/3.0) * (S) * ((2.0 * ((1.0 / (factorial(numofelec,3) - factorial(numofelec - 1.0,4))) * ((factorial(bonds - 2.0,5))/(factorial((bonds - 2.0) - (numofelec - 1.0),6)))) + ((factorial(numofelec,7) / (factorial(numofelec,8) - factorial(numofelec - 2.0,9))) * (factorial(bonds - 3.0,10) / (factorial((bonds - 3.0) - (numofelec - 2.0),11))))) / (factorial(bonds,12) / (factorial(bonds - numofelec,14)))));
-		printf("not-main part is %f\n",((numofelec/bonds)*(1.0/3.0)*(S)));
-		printf("not main part without S is %f\n",((numofelec/bonds)*(1.0/3.0)));
-		printf("numofelec/bonds is %f, numofelec is %f, bonds is %f\n",(numofelec/bonds),numofelec,bonds);
 		if (result < -1 || result > 1)
 		{
 			printf("%f\n",result);
@@ -146,6 +143,6 @@ int main()
 		halt_and_catch_fire(funcname,whatmessedup); // check the array
 	}
 	printarr(molarr,MAX,bonds,electrons); // print the array
-	double result = kevinsmath(3,2,10);
-	printf("%f\n",result);
+	double result = kevinsmath(3,5,10);
+	printf("final prob is %f.\n",result);
 }
