@@ -10,4 +10,5 @@ cp -r /etc ./etc/
 mkdir loader
 cp -r /boot/loader.* loader/
 git add .
-echo "Now: cd ~/git-dotfiles; git commit and git push"
+cd ~/git-dotfiles
+echo "now git commit and git push"
