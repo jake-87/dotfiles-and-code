@@ -48,17 +48,18 @@ int checkarr(int array[MAX][MAX], int bonds, int molecules)
 	}
 	return 0;
 }
-double factorial(double i)
+double factorial(double i, int ident)
 {
 	if (i < 0)
 	{
-		printf("You were trying to factorial a negative number silly! %f.\n",i);
+		printf("You were trying to factorial a negative number silly! Number was %f, idnet was %d, defaulting to 1.\n",i,ident);
+		return 1;
 	}
 	if (i == 0)
 	{
 		return 1;
 	}
-	double a = (i * factorial(i - 1));
+	double a = (i * factorial(i - 1,ident));
 	return a;
 }
 double kevinsmath(double numofelec, double numofelec2, double bonds)
@@ -83,10 +84,11 @@ double kevinsmath(double numofelec, double numofelec2, double bonds)
 	{
 		return 1;
 	}
-	double S = ((numofelec - numofelec2) / ( (abs(numofelec * numofelec2)) + c ) + d);
+	double S = ((numofelec - numofelec2) / ( (fabs(numofelec * numofelec2)) + c ) + d);
+	printf("S is %f.\n",S);
 	if (numofelec == 1.0)
 	{
-		double result = ((1/bonds) * (2/((factorial(bonds))/factorial(numofelec))) * (1/3) * (S));
+		double result = ((1/bonds) * (2/((factorial(bonds,1))/factorial(numofelec,2))) * (1/3) * (S));
 		if (result < -1 || result > 1)
 		{
 			printf("%f\n",result);
@@ -96,7 +98,10 @@ double kevinsmath(double numofelec, double numofelec2, double bonds)
 	}
 	else 
 	{
-		double result = (((((2 * ((numofelec * ((factorial(bonds - 2))) / (factorial((bonds - 2) - (numofelec - 1)))))) + ((factorial(numofelec)/(2 * factorial(numofelec - 2) * (factorial(bonds - 3) / ((factorial(bonds - 3)) - (numofelec - 2))))))) / ((factorial(bonds))/(factorial(bonds - numofelec)))) / (factorial(bonds) / (factorial(bonds) - factorial(numofelec)))) * S * (bonds / numofelec) * (1/3));
+		double result = ((numofelec / bonds) * (1.0/3.0) * (S) * ((2.0 * ((1.0 / (factorial(numofelec,3) - factorial(numofelec - 1.0,4))) * ((factorial(bonds - 2.0,5))/(factorial((bonds - 2.0) - (numofelec - 1.0),6)))) + ((factorial(numofelec,7) / (factorial(numofelec,8) - factorial(numofelec - 2.0,9))) * (factorial(bonds - 3.0,10) / (factorial((bonds - 3.0) - (numofelec - 2.0),11))))) / (factorial(bonds,12) / (factorial(bonds - numofelec,14)))));
+		printf("not-main part is %f\n",((numofelec/bonds)*(1.0/3.0)*(S)));
+		printf("not main part without S is %f\n",((numofelec/bonds)*(1.0/3.0)));
+		printf("numofelec/bonds is %f, numofelec is %f, bonds is %f\n",(numofelec/bonds),numofelec,bonds);
 		if (result < -1 || result > 1)
 		{
 			printf("%f\n",result);
@@ -141,6 +146,6 @@ int main()
 		halt_and_catch_fire(funcname,whatmessedup); // check the array
 	}
 	printarr(molarr,MAX,bonds,electrons); // print the array
-	double result = kevinsmath(5,2,10);
+	double result = kevinsmath(3,2,10);
 	printf("%f\n",result);
 }
