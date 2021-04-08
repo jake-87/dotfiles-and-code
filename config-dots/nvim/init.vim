@@ -5,6 +5,7 @@ Plug  'deoplete-plugins/deoplete-clang'
 Plug  'dense-analysis/ale'
 Plug  'arakashic/chromatica.nvim'
 Plug  'frazrepo/vim-rainbow'
+Plug  'jiangmiao/auto-pairs', { 'for' : 'c' }
 call plug#end()
 let g:ale_linters = {
     \ 'python': ['pylint'],
