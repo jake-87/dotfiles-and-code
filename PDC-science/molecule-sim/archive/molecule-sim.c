@@ -71,7 +71,7 @@ double kevinsmath(double numofelec, double numofelec2, double bonds)
 		c = 0;
 		d = 0;
 	}
-	else if (numofelec == 0 || numofelec2 == 0)
+	else if (numofelec - 2 == 0 || numofelec2 - 2 == 0)
 	{
 		c = 1;
 		d = 1;
@@ -84,11 +84,10 @@ double kevinsmath(double numofelec, double numofelec2, double bonds)
 	{
 		return 1;
 	}
-	double S = ((numofelec - numofelec2) / ( (fabs(numofelec * numofelec2)) + c ) + d);
-	printf("S is %f.\n",S);
+	double S = (((numofelec - 2) - (numofelec2 - 2)) / ( (fabs((numofelec - 2) * (numofelec2 - 2))) + c ) + d);
 	if (numofelec == 1.0)
 	{
-		double result = ((1/bonds) * (2/((factorial(bonds,1))/factorial(numofelec,2))) * (1/3) * (S));
+		double result = ((1/bonds) * (2/(((factorial(bonds,1))/factorial(numofelec,2)))) * (1/3) * (S));
 		if (result < -1 || result > 1)
 		{
 			printf("%f\n",result);
@@ -97,8 +96,8 @@ double kevinsmath(double numofelec, double numofelec2, double bonds)
 		return result;
 	}
 	else 
-	{
-		double result = ((numofelec / bonds) * (1.0/3.0) * (S) * ((2.0 * ((1.0 / (factorial(numofelec,3) - factorial(numofelec - 1.0,4))) * ((factorial(bonds - 2.0,5))/(factorial((bonds - 2.0) - (numofelec - 1.0),6)))) + ((factorial(numofelec,7) / (factorial(numofelec,8) - factorial(numofelec - 2.0,9))) * (factorial(bonds - 3.0,10) / (factorial((bonds - 3.0) - (numofelec - 2.0),11))))) / (factorial(bonds,12) / (factorial(bonds - numofelec,14)))));
+	{	
+		double result = ((numofelec / bonds) * (1.0/3.0) * (S) * ((2.0 * ((1.0 / (factorial(numofelec,3) - factorial(numofelec - 1.0,4))) * ((factorial(bonds - 2.0,5))/(factorial((bonds - 2.0) - (numofelec - 1.0),6)))) + ((factorial(numofelec,7) / (factorial(numofelec,8) - factorial(numofelec - 2.0,9))) * (factorial(bonds - 3.0,10) / (factorial((bonds - 3.0) - (numofelec - 2.0),11))))) / (factorial(bonds,12) / (factorial(bonds - numofelec,14)))));	
 		if (result < -1 || result > 1)
 		{
 			printf("%f\n",result);
@@ -143,6 +142,6 @@ int main()
 		halt_and_catch_fire(funcname,whatmessedup); // check the array
 	}
 	printarr(molarr,MAX,bonds,electrons); // print the array
-	double result = kevinsmath(3,5,10);
+	double result = kevinsmath(2,3,5);
 	printf("final prob is %f.\n",result);
 }
