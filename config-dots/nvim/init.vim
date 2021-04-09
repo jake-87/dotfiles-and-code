@@ -24,3 +24,4 @@ let g:neoformat_enabled_cpp = ['clangformat']
 let g:neoformat_enabled_c = ['clangformat']
 let g:rainbow_active = 1
 let g:rainbow_ctermfgs = ['green', 'yellow', 'red', 'darkblue']
+inoremap <A> <ESC> 
