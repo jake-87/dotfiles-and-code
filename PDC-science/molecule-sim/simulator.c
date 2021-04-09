@@ -6,29 +6,29 @@
 #define MAXELEC 5
 #define SRTELEC 2
 #define MOLNUMB 10
-double kevinsmath();
+long double kevinsmath();
 int main()
 {
-	double molecules[MOLNUMB];
-	double etot = MAXELEC;
+	long double molecules[MOLNUMB];
+	long double etot = MAXELEC;
 	for (int i = 0; i <= MOLNUMB; i++)
 	{
 		molecules[i] = SRTELEC;
 	}
-	for (double i = 0.f; i <=  ( double ) MAXELEC; i++)
+	for (long double i = 0.f; i <=  ( long double ) MAXELEC; i++)
 	{
-		for (double j = 0.f; j <= ( double ) MAXELEC; j++)
+		for (long double j = 0.f; j <= ( long double ) MAXELEC; j++)
 		{
-			printf("i is %.15f, j is %.15f ",i,j);
-			kevinsmath(i,j,MAXELEC);
+			printf("i is %Lf, j is %Lf ",i,j);
+			kevinsmath(i,j, etot);
 		}
 	}
 }
-double kevinsmath(double er1,double er2,double etot)
+long double kevinsmath(long double er1,long double er2,long double etot)
 {
-	double eoxy1 = er1 - 2.0;
-	double eoxy2 = er2 - 2.0;
-	double d,c;
+	long double eoxy1 = er1 - 2.0;
+	long double eoxy2 = er2 - 2.0;
+	long double d,c;
 	if (eoxy1 - eoxy2 == 0.0)
 	{
 		d = 1.0;
@@ -37,7 +37,7 @@ double kevinsmath(double er1,double er2,double etot)
 	{
 		d = 0.0;
 	}
-	if (fabs(eoxy1 * eoxy2) == 0)
+	if (fabsl(eoxy1 * eoxy2) == 0)
 	{
 		c = 1.0;
 	}
@@ -45,8 +45,8 @@ double kevinsmath(double er1,double er2,double etot)
 	{
 		c = 0.0;
 	}
-	double S = ( ( ( eoxy1 - eoxy2 ) / ( fabs( eoxy1 * eoxy2 ) + c ) ) + d );
-	printf("S is %.15f ",S);
+	long double S = ( ( ( eoxy1 - eoxy2 ) / ( fabsl( eoxy1 * eoxy2 ) + c ) ) + d );
+	printf("S is %Lf ",S);
 	if (er1 == 0.0)
 	{
 		printf("result is 0\n");
@@ -54,19 +54,19 @@ double kevinsmath(double er1,double er2,double etot)
 	}
 	if (er1 == 1.0)
 	{
-		double result = ((1.0/etot) * (2.0/(psel(etot,1,1))) * (1.0/3.0) * (S));
-		printf("result is %.15f\n",result);
+		long double result = ((1.0/etot) * (2.0/(psel(etot,1,1))) * (1.0/3.0) * (S));
+		printf("result is %Lf\n",result);
 		return result;
 	}
 	if (er1 == etot)
 	{
-		printf("result is %.15f\n",1.0);
+		printf("result is %d\n",1);
 		return (1);
 	}
 	else 
 	{
-		double result = ((er1/etot) * ((((2 * (sel(er1,1,2) * psel(etot - 2, er1 - 1,3)) + (sel(er1,1,4) * psel(etot - 3,er1 - 2,5)))) / psel(etot,er1,6))) * (1.0/3.0) * (S));
-		printf("result is %.15f\n",result);
+		long double result = ((er1/etot) * ((((2 * (sel(er1,1,2) * psel(etot - 2, er1 - 1,3)) + (sel(er1,1,4) * psel(etot - 3,er1 - 2,5)))) / psel(etot,er1,6))) * (1.0/3.0) * (S));
+		printf("result is %Lf\n",result);
 		return result;
 	}
 	return 0;
