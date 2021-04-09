@@ -14,9 +14,8 @@ int main()
 	for (int i = 0; i <= MOLNUMB; i++)
 	{
 		molecules[i] = SRTELEC;
-		printf("Initing molecule %d\n",i);
 	}
-	kevinsmath(4.0,1.0,5.0);
+	kevinsmath(1.0,4.0,5.0);
 }
 double kevinsmath(double er1,double er2,double etot)
 {
@@ -40,7 +39,7 @@ double kevinsmath(double er1,double er2,double etot)
 		c = 0.0;
 	}
 	printf("c and d are %f and %f\n",c,d);
-	double S = (((eoxy1 - eoxy2)/((fabs(eoxy1 - eoxy2) + c)) + d));
+	double S = ( ( ( eoxy1 - eoxy2 ) / ( fabs( eoxy1 - eoxy2 ) + c ) ) + d );
 	printf("S is %f\n",S);
 	if (er1 == 0.0)
 	{
@@ -55,12 +54,12 @@ double kevinsmath(double er1,double er2,double etot)
 	}
 	if (er1 == etot)
 	{
-		printf("%f\n",S/3.0);
-		return (S / 3.0);
+		printf("%f\n",1.0);
+		return (1);
 	}
 	else 
 	{
-		double result = ((er1/etot) * ((2 * (sel(er1,1) * psel(etot - 2, er1 - 1)) + (sel(er1,1) * psel(etot - 3,er1 - 2)) / psel(etot,er1))) * (1.0/3.0) * (S));
+		double result = ((er1/etot) * (((2 * (sel(er1,1) * psel(etot - 2, er1 - 1)) + (sel(er1,1) * psel(etot - 3,er1 - 2))) / psel(etot,er1))) * (1.0/3.0) * (S));
 		printf("result for er1 = %f is %f\n",er1,result);
 		return result;
 	}
