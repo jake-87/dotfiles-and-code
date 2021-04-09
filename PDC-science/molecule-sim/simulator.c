@@ -15,10 +15,15 @@ int main()
 		molecules[i] = SRTELEC;
 		printf("Initing molecule %d\n",i);
 	}
+	printf("pselect 5 \"over\" 2 = %f\n",psel(5,2));
+	printf("select 5 \"over\" 2 = %f\n",sel(5,2));
 }
 double kevinsmath(double er1,double er2,double etot)
 {
-	double eneg1 = er1 - 2.0;
-	double eneg2 = er2 - 2.0;
-	S = ( ( () / () ) )
+	double eoxy1 = er1 - 2.0;
+	double eoxy2 = er2 - 2.0;
+	if (eoxy1 - eoxy2 == 0.0)
+	{
+		double d = 0.0;
+	}
 }
