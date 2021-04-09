@@ -11,4 +11,4 @@ mkdir loader
 cp -r /boot/loader.* loader/
 git add .
 cd ~/git-dotfiles
-echo "now git commit and git push"
+echo "now cd ~/git-dotfiles, git commit and git push"
