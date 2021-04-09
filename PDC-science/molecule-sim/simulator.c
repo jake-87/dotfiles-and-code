@@ -15,7 +15,14 @@ int main()
 	{
 		molecules[i] = SRTELEC;
 	}
-	kevinsmath(1.0,4.0,5.0);
+	for (double i = 0.f; i <=  ( double ) MAXELEC; i++)
+	{
+		for (double j = 0.f; j <= ( double ) MAXELEC; j++)
+		{
+			printf("i is %.15f, j is %.15f ",i,j);
+			kevinsmath(i,j,MAXELEC);
+		}
+	}
 }
 double kevinsmath(double er1,double er2,double etot)
 {
@@ -38,29 +45,28 @@ double kevinsmath(double er1,double er2,double etot)
 	{
 		c = 0.0;
 	}
-	printf("c and d are %f and %f\n",c,d);
-	double S = ( ( ( eoxy1 - eoxy2 ) / ( fabs( eoxy1 - eoxy2 ) + c ) ) + d );
-	printf("S is %f\n",S);
+	double S = ( ( ( eoxy1 - eoxy2 ) / ( fabs( eoxy1 * eoxy2 ) + c ) ) + d );
+	printf("S is %.15f ",S);
 	if (er1 == 0.0)
 	{
-		printf("0\n");
+		printf("result is 0\n");
 		return 0;
 	}
 	if (er1 == 1.0)
 	{
-		double result = ((1.0/etot) * (2.0/(psel(etot,1.0))) * (1.0/3.0) * (S));
-		printf("result for er1 = 1 is %f\n",result);
+		double result = ((1.0/etot) * (2.0/(psel(etot,1,1))) * (1.0/3.0) * (S));
+		printf("result is %.15f\n",result);
 		return result;
 	}
 	if (er1 == etot)
 	{
-		printf("%f\n",1.0);
+		printf("result is %.15f\n",1.0);
 		return (1);
 	}
 	else 
 	{
-		double result = ((er1/etot) * (((2 * (sel(er1,1) * psel(etot - 2, er1 - 1)) + (sel(er1,1) * psel(etot - 3,er1 - 2))) / psel(etot,er1))) * (1.0/3.0) * (S));
-		printf("result for er1 = %f is %f\n",er1,result);
+		double result = ((er1/etot) * ((((2 * (sel(er1,1,2) * psel(etot - 2, er1 - 1,3)) + (sel(er1,1,4) * psel(etot - 3,er1 - 2,5)))) / psel(etot,er1,6))) * (1.0/3.0) * (S));
+		printf("result is %.15f\n",result);
 		return result;
 	}
 	return 0;
