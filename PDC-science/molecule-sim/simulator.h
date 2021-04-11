@@ -14,19 +14,6 @@ long double comparedouble(long double a, long double b)
 		return 0.f;
 	}
 }
-unsigned long mix(unsigned long a, unsigned long b, unsigned long c)
-{
-    a=a-b;  a=a-c;  a=a^(c >> 13);
-    b=b-c;  b=b-a;  b=b^(a << 8);
-    c=c-a;  c=c-b;  c=c^(b >> 13);
-    a=a-b;  a=a-c;  a=a^(c >> 12);
-    b=b-c;  b=b-a;  b=b^(a << 16);
-    c=c-a;  c=c-b;  c=c^(b >> 5);
-    a=a-b;  a=a-c;  a=a^(c >> 3);
-    b=b-c;  b=b-a;  b=b^(a << 10);
-    c=c-a;  c=c-b;  c=c^(b >> 15);
-    return c;
-} // evil bitwise hack
 long double fact(long double dubnumber, int ident) // this computes factorials of long doubles, dispite the fact that it cant actually understand anything other than a whole number, it gets given long doubles and it has to return long doubles so it has to suffer
 {
 	int number = dubnumber;
