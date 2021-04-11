@@ -18,8 +18,6 @@ int main()
 	{
 		molecules[i] = SRTELEC; // init out mol array
 	}
-	long double psrnd = doublerand();
-	long double ngrnd = negdoublerand();
 	long double result = 0;
 	long double randomnumber;
 	long long endelecs = 0;
