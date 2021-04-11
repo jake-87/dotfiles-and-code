@@ -5,7 +5,7 @@
 #include "simulator.h" //include a bunch of stuff, including our custom functions fact(), psel() and sel() (sidenote: Seriously math.h, for a maths lib, its kinda stoopid that you dont include a factorial function)
 #define MAXELEC 5
 #define SRTELEC 2
-#define LOOPS 1000 // 6 zeros, 1 million
+#define LOOPS 10000 // 6 zeros, 1 million
 #define MOLNUMB 10 // some constants 
 long double kevinsmath(); // sidenote 2: bloody everything has to be long doubles because of pricision, meaning its kinda bad not gonna lie, buts thats how the cookie crumbles
 int main()
@@ -18,11 +18,24 @@ int main()
 	{
 		molecules[i] = SRTELEC; // init out mol array
 	}
+	printf(":");
 	long double result = 0;
 	long double randomnumber;
 	long long endelecs = 0;
+	long double resconstant;
+	long double secondres;
 	for (int loopnum = 0; loopnum < LOOPS; loopnum++)
 	{
+		resconstant = doublerand();
+		secondres = doublerand();
+		if (secondres < resconstant)
+		{
+			int applyresistance = 1;
+		}
+		else
+		{
+			int applyresistance = 0;
+		}
 		for (int loop2 = 0; loop2 < MOLNUMB; loop2++)
 		{
 			result = kevinsmath(molecules[loop2],molecules[loop2 + 1],etot);
@@ -31,6 +44,7 @@ int main()
 				randomnumber = doublerand();
 				if (randomnumber < result)
 				{
+
 					molecules[loop2]--;
 					molecules[loop2 + 1]++;
 				}
@@ -45,17 +59,11 @@ int main()
 				}
 			}
 		}
-		if (doublerand() < 0.3)
+		molecules[0] = etot;
+		if (molecules[MOLNUMB - 1] > 0)
 		{
-			molecules[0]++;
-		}
-		if (doublerand() < 0.3)
-		{
-			if (molecules[MOLNUMB - 1] > 0)
-			{
-				endelecs++;
-				molecules[MOLNUMB - 1]--;
-			}
+			endelecs++;
+			molecules[MOLNUMB - 1]--;
 		}
 	}
 	printf("%Ld\n",endelecs);
