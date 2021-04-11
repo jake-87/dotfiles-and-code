@@ -5,7 +5,7 @@
 #include "simulator.h" //include a bunch of stuff, including our custom functions fact(), psel() and sel() (sidenote: Seriously math.h, for a maths lib, its kinda stoopid that you dont include a factorial function)
 #define MAXELEC 5
 #define SRTELEC 2
-#define LOOPS 10
+#define LOOPS 10000
 #define MOLNUMB 10 // some constants 
 long double kevinsmath(); // sidenote 2: bloody everything has to be long doubles because of pricision, meaning its kinda bad not gonna lie, buts thats how the cookie crumbles
 int main()
@@ -49,13 +49,18 @@ int main()
 				}
 			}
 		}
-		if (molecules[MOLNUMB - 1] > 0)
+		if (doublerand() < 0.3)
 		{
-			endelecs = endelecs + molecules[MOLNUMB - 1];
-			molecules[MOLNUMB - 1] = 0;
+			molecules[0]++;
 		}
-		molecules[0] = etot;
-		
+		if (doublerand() < 0.3)
+		{
+			if (molecules[MOLNUMB - 1] != 0)
+			{
+				endelecs++;
+				molecules[MOLNUMB - 1]--;
+			}
+		}
 	}
 	printf("Total number of iterations of the maths equation: %lld, end result of electrons: %lld\n", (long long) (LOOPS * MOLNUMB),endelecs);
 	return 0;
