@@ -65,4 +65,6 @@ export EDITOR=nvim
 alias ,nightly=",upgrade && doas ,auto-backup && cd /usr/src && doas git pull && echo \"When you want too, cd to /usr/src and run \",building-inc\" to know how to build the lastest kernel and world.\""
 alias ",building-inc"="echo \"cd /usr/src, make -j5 buildworld, make -j5 kernel, reboot to new kernel, cd /usr/src again, make -j5 installworld, mergemaster -Ui, done.\""
 alias back=-
+markdownview() { markdown "$1" | lynx -stdin; }
 alias wahoo=echo "Mario time!"
+export LD_LIBRARY_PATH=/usr/local/include/:${LD_LIBRARY_PATH}

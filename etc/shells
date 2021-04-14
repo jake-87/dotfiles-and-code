@@ -7,8 +7,8 @@
 /bin/sh
 /bin/csh
 /bin/tcsh
-/usr/local/bin/bash
-/usr/local/bin/rbash
 /usr/local/bin/zsh
 /usr/local/bin/rzsh
+/usr/local/bin/bash
+/usr/local/bin/rbash
 /usr/local/libexec/git-core/git-shell
