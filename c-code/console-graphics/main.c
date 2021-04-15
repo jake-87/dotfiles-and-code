@@ -1,99 +1,89 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <unistd.h>
 #include <math.h>
-typedef struct Tri
+#include <unistd.h>
+typedef struct
 {
-	int vert[3][2];
+	int x;
+	int y;
+}point;
+typedef struct
+{
+	point vert[3];
 } tri;
-float area(int x1, int y1, int x2, int y2, int x3, int y3)
+float triangleArea(point p1, point p2, point p3)
 {
-   return fabs((x1*(y2-y3) + x2*(y3-y1)+ x3*(y1-y2))/2.0);
+	float A=sqrt(((p2.x-p1.x)*(p2.x-p1.x))+((p2.y-p1.y)*(p2.y-p1.y)));
+    	float B=sqrt(((p3.x-p2.x)*(p3.x-p2.x))+((p3.y-p2.y)*(p3.y-p2.y)));
+    	float C=sqrt(((p1.x-p3.x)*(p1.x-p3.x))+((p1.y-p3.y)*(p1.y-p3.y)));
+    	float side=((A+B+C)/2);
+    	float area=sqrt(side*(side-A)*(side-B)*(side-C));
+	return area;
 }
- 
-/* A function to check whether point P(x, y) lies inside the triangle formed
-   by A(x1, y1), B(x2, y2) and C(x3, y3) */
-int isInside(tri * triangle,int px, int py)
-{ 
-	int x1 = triangle->vert[0][0];
-	int y1 = triangle->vert[0][1]; 
-	int x2 = triangle->vert[1][0]; 
-	int y2 = triangle->vert[1][1]; 
-	int x3 = triangle->vert[2][0]; 
-	int y3 = triangle->vert[2][1]; 
-   /* Calculate area of triangle ABC */
-   float A = area (x1, y1, x2, y2, x3, y3);
- 
-   /* Calculate area of triangle PBC */  
-   float A1 = area (px, py, x2, y2, x3, y3);
- 
-   /* Calculate area of triangle PAC */  
-   float A2 = area (x1, y1, px, py, x3, y3);
- 
-   /* Calculate area of triangle PAB */   
-   float A3 = area (x1, y1, x2, y2, px, py);
-   /* Check if sum of A1, A2 and A3 is same as A */
-   if (A == A1 + A2 + A3)
-   {
-//	   printf("Equal\n");
-	   return 1;
-   }
-   else
-   {
-//	   printf("Not Equal\n");
-	   return 0;
-   }
-   return (A == A1 + A2 + A3);
+int isInside(tri triangle, point p1)
+{
+	float A = triangleArea(triangle.vert[0],triangle.vert[1],triangle.vert[2]);	
+	float A1 = triangleArea(p1,triangle.vert[1],triangle.vert[2]);
+	float A2 = triangleArea(triangle.vert[0],p1,triangle.vert[2]);
+	float A3 = triangleArea(triangle.vert[0],triangle.vert[1],p1);
+	//printf("A is %f, A1 is %f A2 is %f a3 is %f\n",A,A1,A2,A3);
+	if (A == A1 + A2 + A3)
+	{
+		return 1;
+	}
+	else
+	{
+		return 0;
+	}
 }
 int main(void)
 {
-	int trinum;
-	printf("How many tris?");
-	scanf("%d",&trinum);
-	tri triangle[100];
-	char * blank = "   ";
-	char * full = "███";
-	for (int i = 0; i < trinum; i++)
+	int i,j;
+	int chk;
+	int numtri;
+	printf("How many tris? : ");
+	scanf("%d",&numtri);
+	tri triangle[numtri];
+	for (i = 0; i < numtri; i++)
 	{
-		for (int j = 0; j < 3; j++)
+		for (j = 0; j < 3; j++)
 		{
 			printf("Tri %d vert %d X : ",i,j);
-			scanf("%d",&triangle[i].vert[j][0]);
-			printf(" You entered %d\n",triangle[i].vert[j][0]);
+			scanf("%d",&triangle[i].vert[j].x);
+			printf("You just entered %d\n",triangle[i].vert[j].x);
 			printf("Tri %d vert %d Y : ",i,j);
-			scanf("%d",&triangle[i].vert[j][1]);
-			printf(" You entered %d\n",triangle[i].vert[j][1]);
+			scanf("%d",&triangle[i].vert[j].y);
+			printf("You just entered %d\n",triangle[i].vert[j].y);
 		}
 	}
-	const int screenx = 40;
-	const int screeny = 40;
-	int chk = 0;
-	for (int i = 0; i < screenx; i++)
+	int xpos,ypos,num;
+	char * full = "\u2588\u2588";
+	char * empty = "  ";
+	point tmp;
+	for (ypos = 0; ypos < 40; ypos++)
 	{
-		for (int j = 0; j < screeny; j++)
+		for (xpos = 0; xpos < 40; xpos++)
 		{
-			if (i % 2 == 0)
+			chk = 0;
+			for (num = 0; num < numtri; num++)
 			{
-				printf("%s",full);
-			}
-			else
-			{
-				printf("%s",blank);
-			}
-			/*
-			for (int num = 0; num < trinum; num++)
-			{
-				if (isInside(&triangle[num],j,i) == 1)
+				if (chk)
+				{
+					continue;
+				}
+				//printf("isInside tri[num] and tmp is %d",isInside(triangle[num],tmp));
+				tmp.x = xpos;
+				tmp.y = ypos;
+				if (isInside(triangle[num],tmp) == 1)
 				{
 					printf("%s",full);
 					chk = 1;
 				}
+				else
+				{
+					printf("%s",empty);
+				}
 			}
-			if (!chk)
-			{
-				printf("%s",blank);
-			}
-			chk = 0; */
 		}
 		printf("\n");
 	}
