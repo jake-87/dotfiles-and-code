@@ -1,0 +1,9 @@
+Mono path[0] = '/usr/home/freebsd/random-stuff/demo v0.3.1 linux/demo v0.3 linux_Data/Managed'
+Mono config path = '/usr/home/freebsd/random-stuff/demo v0.3.1 linux/demo v0.3 linux_Data/MonoBleedingEdge/etc'
+Caught fatal signal - signo:6 code:-6 errno:0 addr:0x3ea00011f03
+Obtained 5 stack frames.
+#0  0x007ffffffff514 in (Unknown)
+#1  0x00000803881329 in (Unknown)
+#2  0x007fffffffdca0 in (Unknown)
+#3  0x000008038488d1 in (Unknown)
+#4  0x00000800625000 in (Unknown)

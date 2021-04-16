@@ -9,6 +9,8 @@ cp -r ../bin/ ./bin
 cp -r /etc ./etc/
 mkdir loader
 cp -r /boot/loader.* loader/
+rm -rf c-code/murk-lang
+git submodule add -f https://github.com/jake-87/murk-lang c-code/murk-lang
 git add .
 cd ~/git-dotfiles
 echo "now cd ~/git-dotfiles, git commit and git push"

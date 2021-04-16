@@ -3,5 +3,6 @@
 (aspect-denominator 900)
 (aspect-numerator 1600)
 (fixed-center yes)
+(pattern "Pine")
 
 # end of gimp-crop-tool options

@@ -1,0 +1,3 @@
+[submodule "c-code/murk-lang"]
+	path = c-code/murk-lang
+	url = https://github.com/jake-87/murk-lang
