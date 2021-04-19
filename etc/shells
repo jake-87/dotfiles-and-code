@@ -9,6 +9,6 @@
 /bin/tcsh
 /usr/local/bin/zsh
 /usr/local/bin/rzsh
+/usr/local/libexec/git-core/git-shell
 /usr/local/bin/bash
 /usr/local/bin/rbash
-/usr/local/libexec/git-core/git-shell
