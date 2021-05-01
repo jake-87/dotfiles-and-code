@@ -45,3 +45,5 @@ cups:*:193:
 colord:*:970:
 freebsd:*:1002:
 cyrus:*:60:
+vboxusers:*:920:freebsd
+slurm:*:468:

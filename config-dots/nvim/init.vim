@@ -5,7 +5,8 @@ Plug  'deoplete-plugins/deoplete-clang'
 Plug  'dense-analysis/ale'
 Plug  'arakashic/chromatica.nvim'
 Plug  'frazrepo/vim-rainbow'
-Plug  'jiangmiao/auto-pairs', { 'for' : 'c' }
+Plug  'sakhnik/nvim-gdb', { 'do': ':!./install.sh' }
+Plug  'jiangmiao/auto-pairs', { 'for' : 'c'}
 call plug#end()
 let g:ale_linters = {
     \ 'python': ['pylint'],

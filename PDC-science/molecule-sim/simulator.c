@@ -18,26 +18,38 @@ int main()
 	{
 		molecules[i] = SRTELEC; // init out mol array
 	}
-	printf(":");
 	long double result = 0;
 	long double randomnumber;
 	long long endelecs = 0;
 	long double resconstant;
 	long double secondres;
+	int tmp1 = 0;
 	for (int loopnum = 0; loopnum < LOOPS; loopnum++)
 	{
-		resconstant = doublerand();
-		secondres = doublerand();
-		if (secondres < resconstant)
-		{
-			int applyresistance = 1;
-		}
-		else
-		{
-			int applyresistance = 0;
-		}
+		
 		for (int loop2 = 0; loop2 < MOLNUMB; loop2++)
 		{
+			/*resconstant = doublerand();
+			secondres = doublerand();
+			tmp1 = 0;	
+			result = kevinsmath(molecules[loop2],molecules[loop2 + 1],etot);
+			if (result > 0)
+			{
+				if (secondres < resconstant)
+				{
+					printf("mol before %.15f\n",molecules[loop2]);
+					tmp1 = (rand() % 5);
+					if (tmp1 - 2 < 1)
+					{
+						tmp1 = 2;
+					}
+					printf("tmp1 %d\n",tmp1);
+					int tmp3 = tmp1 - 2;
+					printf("tmp3 %d\n",tmp3);
+					molecules[loop2] = molecules[loop2] - (tmp1 - 2);
+					printf("mol %.15f\n",molecules[loop2]);
+				}
+			}*/
 			result = kevinsmath(molecules[loop2],molecules[loop2 + 1],etot);
 			if (result > 0)
 			{

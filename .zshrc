@@ -46,7 +46,7 @@ if test -z "${XDG_RUNTIME_DIR}"; then export XDG_RUNTIME_DIR=/tmp/${UID}-runtime
 		chmod 0700 "${XDG_RUNTIME_DIR}"
 	fi
 fi
-
+alias bfetch="pfetch | sed \"s/3843/1048576/g\" | sed \"s/2.67/6.12/g\" | sed \"s/Core(TM) i5 CPU M 480/Threadripper 8950 CPU (256) /g\" | sed \"s/FreeBSD 13.0/FreeBSD 19.5/g\" "
 alias la="ls -lah"
 # ,theme.sh brogrammer
 alias init="doas init"
@@ -67,4 +67,5 @@ alias ",building-inc"="echo \"cd /usr/src, make -j5 buildworld, make -j5 kernel,
 alias back=-
 markdownview() { markdown "$1" | lynx -stdin; }
 alias wahoo=echo "Mario time!"
+alias gitinfo="onefetch"
 export LD_LIBRARY_PATH=/usr/local/include/:${LD_LIBRARY_PATH}
