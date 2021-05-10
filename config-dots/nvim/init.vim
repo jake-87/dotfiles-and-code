@@ -5,8 +5,12 @@ Plug  'deoplete-plugins/deoplete-clang'
 Plug  'dense-analysis/ale'
 Plug  'arakashic/chromatica.nvim'
 Plug  'frazrepo/vim-rainbow'
-Plug  'sakhnik/nvim-gdb', { 'do': ':!./install.sh' }
 Plug  'jiangmiao/auto-pairs', { 'for' : 'c'}
+Plug  'jiangmiao/auto-pairs', { 'for' : 'f90'}
+Plug 'ajmwagar/vim-deus'
+Plug 'sheerun/vim-polyglot'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 call plug#end()
 let g:ale_linters = {
     \ 'python': ['pylint'],
@@ -26,3 +30,9 @@ let g:neoformat_enabled_c = ['clangformat']
 let g:rainbow_active = 1
 let g:rainbow_ctermfgs = ['green', 'yellow', 'red', 'darkblue']
 inoremap <A> <ESC> 
+colorscheme deus
+set tabstop=4
+set softtabstop=0 noexpandtab
+set shiftwidth=4
+syntax on
+let g:airline_theme='deus'

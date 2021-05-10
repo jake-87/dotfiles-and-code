@@ -47,3 +47,6 @@ freebsd:*:1002:
 cyrus:*:60:
 vboxusers:*:920:freebsd
 slurm:*:468:
+pulse:*:563:
+pulse-access:*:564:
+pulse-rt:*:557:

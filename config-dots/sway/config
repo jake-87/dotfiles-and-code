@@ -80,7 +80,7 @@ output * bg /usr/local/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png 
 
     # Reload the configuration file
     bindsym $mod+Shift+r reload
-    bindsym Print exec terminator -e "doas pkg update && doas pkg upgrade && doas pkg autoremove && sleep 1"				
+    bindsym Print exec terminator -e "doas pkg update && doas pkg upgrade && doas pkg autoremove"				
     # Exit sway (logs you out of your Wayland session)
     bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -b 'Yes, exit sway' 'swaymsg exit'
 #
@@ -206,11 +206,9 @@ bar {
     # When the status_command prints a new line to stdout, swaybar updates.
     # The default just shows the current date and time.
     status_command while /home/freebsd/.config/sway/scripts/swaybarscript; do sleep 1; done
-
     colors {
-        statusline #ffffff
-        background #323232
-        inactive_workspace #32323200 #32323200 #5c5c5c
+        statusline #eeeeee
+        background #1e1e1e
     }
 }
 default_border pixel 1
@@ -218,6 +216,6 @@ hide_edge_borders both
 for_window [class="^.*"] border pixel 2
 gaps inner 20
 gaps outer 30
-output * bg /home/freebsd/.config/sway/backgrounds/star-shooting.png fit
+output * bg /home/freebsd/.config/sway/backgrounds/fbsd-logo-black.jpg stretch
 include /usr/local/etc/sway/config.d/*
 exec terminator

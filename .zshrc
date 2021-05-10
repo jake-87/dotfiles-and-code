@@ -68,4 +68,5 @@ alias back=-
 markdownview() { markdown "$1" | lynx -stdin; }
 alias wahoo=echo "Mario time!"
 alias gitinfo="onefetch"
+alias hx=hexyl
 export LD_LIBRARY_PATH=/usr/local/include/:${LD_LIBRARY_PATH}

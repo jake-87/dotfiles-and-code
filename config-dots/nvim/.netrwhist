@@ -1,5 +1,8 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =9
+let g:netrw_dirhistcnt =2
+let g:netrw_dirhist_2='/usr/home/freebsd/code-projects/fortran-raytracer/lib'
+let g:netrw_dirhist_1='/usr/home/freebsd/code-projects/fortran-raytracer/src'
+let g:netrw_dirhist_0='/usr/home/freebsd/.config/terminator'
 let g:netrw_dirhist_9='/usr/src/usr.sbin/rmt'
 let g:netrw_dirhist_8='/usr/src/usr.sbin/boot0cfg'
 let g:netrw_dirhist_7='/usr/src/usr.sbin/bsdinstall'
@@ -7,6 +10,3 @@ let g:netrw_dirhist_6='/usr/src/usr.sbin/sa'
 let g:netrw_dirhist_5='/usr/src/bin/sh'
 let g:netrw_dirhist_4='/usr/src/bin'
 let g:netrw_dirhist_3='/usr/src/lib/libopenbsd'
-let g:netrw_dirhist_2='/usr/src/lib'
-let g:netrw_dirhist_1='/usr/src/lib/libopenbsd'
-let g:netrw_dirhist_0='/usr/src/lib'
