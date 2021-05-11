@@ -38,32 +38,19 @@ export ARCHFLAGS="-arch x86_64"
 #
 # Example aliases
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias pint="doas pkg install -y"
-alias nano="nvim"
 if test -z "${XDG_RUNTIME_DIR}"; then export XDG_RUNTIME_DIR=/tmp/${UID}-runtime-dir
 	if ! test -d "${XDG_RUNTIME_DIR}"; then
 		mkdir "${XDG_RUNTIME_DIR}"
 		chmod 0700 "${XDG_RUNTIME_DIR}"
 	fi
 fi
-alias bfetch="pfetch | sed \"s/3843/1048576/g\" | sed \"s/2.67/6.12/g\" | sed \"s/Core(TM) i5 CPU M 480/Threadripper 8950 CPU (256) /g\" | sed \"s/FreeBSD 13.0/FreeBSD 19.5/g\" "
 alias la="ls -lah"
 # ,theme.sh brogrammer
 alias init="doas init"
-alias cpm="cc -Wall -pipe -march=native -O2 -lm -lcurses"
-alias csm="cc -Oz -s -ffast-math -m32 -march=x86-64 -fno-exceptions -ffunction-sections -fdata-sections"
 export PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin:/home/freebsd/bin:/home/freebsd/.cargo/bin:/usr/local/lib/qt5/bin/qmake
-alias csmcpp="clang++ -Oz -s -ffast-math -m32 -march=x86-64 -fno-exceptions -ffunction-sections -fdata-sections"
 export QMAKESPEC=freebsd-clang
-alias vim=nvim
-alias vi=nvim
-alias ,chmodhelp="ls -lah $HOME/coding/chmod-tests/"
 # ,donut &
-alias ,upgrade="doas pkg update && doas pkg upgrade && pfetch"
-alias ,clone-src-current="doas git clone https://git.freebsd.org/src.git /usr/src"
 export EDITOR=nvim
-alias ,nightly=",upgrade && doas ,auto-backup && cd /usr/src && doas git pull && echo \"When you want too, cd to /usr/src and run \",building-inc\" to know how to build the lastest kernel and world.\""
-alias ",building-inc"="echo \"cd /usr/src, make -j5 buildworld, make -j5 kernel, reboot to new kernel, cd /usr/src again, make -j5 installworld, mergemaster -Ui, done.\""
 alias back=-
 markdownview() { markdown "$1" | lynx -stdin; }
 alias wahoo=echo "Mario time!"
