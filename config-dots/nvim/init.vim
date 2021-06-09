@@ -1,14 +1,10 @@
 :set nu
 call plug#begin('~/.vim/plugged')
-Plug  'Shougo/deoplete.nvim'
-Plug  'deoplete-plugins/deoplete-clang'
 Plug  'dense-analysis/ale'
 Plug  'arakashic/chromatica.nvim'
 Plug  'frazrepo/vim-rainbow'
-Plug  'jiangmiao/auto-pairs', { 'for' : 'c'}
-Plug  'jiangmiao/auto-pairs', { 'for' : 'f90'}
+Plug  'jiangmiao/auto-pairs', { 'for' : ['c','f90']}
 Plug 'ajmwagar/vim-deus'
-Plug 'sheerun/vim-polyglot'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 call plug#end()
@@ -22,6 +18,7 @@ let g:neoformat_cpp_clangformat = {
     \ 'exe': 'clang-format',
     \ 'args': ['--style="{IndentWidth: 4}"']
 \}
+let g:deoplete#enable_at_startup = 1
 let g:ale_echo_msg_error_str = 'E'
 let g:ale_echo_msg_warning_str = 'W'
 let g:ale_echo_msg_format = '[%linter%] %s [%severity%]'

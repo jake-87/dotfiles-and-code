@@ -1,4 +1,4 @@
 configuration {
 	theme: "/usr/local/share/rofi/themes/purple.rasi";
 }
-@import "/usr/local/share/rofi/themes/purple.rasi"
+@import "/usr/local/share/rofi/themes/gruvbox-dark-hard.rasi"

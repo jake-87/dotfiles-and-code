@@ -50,3 +50,4 @@ slurm:*:468:
 pulse:*:563:
 pulse-access:*:564:
 pulse-rt:*:557:
+nixbld:*:151:

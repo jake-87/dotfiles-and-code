@@ -13,10 +13,11 @@
       <ExtraDataItem name="GUI/LastItemSelected" value="m=fedora"/>
       <ExtraDataItem name="GUI/LastWindowPosition" value="400,225,573,777,max"/>
       <ExtraDataItem name="GUI/RecentFolderCD" value="/home/freebsd/vbox"/>
-      <ExtraDataItem name="GUI/RecentListCD" value="/home/freebsd/vbox/freebsd-13.0-release.iso,/home/freebsd/linux-stuff/debian-10.8.0-amd64-netinst.iso,/home/freebsd/linux-stuff/Fedora-Server-dvd-x86_64-33-1.2.iso,/home/freebsd/linux-stuff/Fedora-Server-netinst-x86_64-33-1.2.iso,/home/freebsd/linux-stuff/nixos-minimal-20.09.3383.37b47da04ca-x86_64-linux.iso"/>
+      <ExtraDataItem name="GUI/RecentListCD" value="/home/freebsd/vbox/void-live-x86_64-20210218.iso,/home/freebsd/vbox/freebsd-13.0-release.iso,/home/freebsd/linux-stuff/debian-10.8.0-amd64-netinst.iso,/home/freebsd/linux-stuff/Fedora-Server-dvd-x86_64-33-1.2.iso,/home/freebsd/linux-stuff/Fedora-Server-netinst-x86_64-33-1.2.iso"/>
       <ExtraDataItem name="GUI/SoftKeyboardColorTheme" value="Custom,#ff878787,#ff000000,#ff676767,#ff9b6767,#fffafafa"/>
       <ExtraDataItem name="GUI/SoftKeyboardDialogGeometry" value="812,73,738,777,max"/>
       <ExtraDataItem name="GUI/SoftKeyboardSelectedColorTheme" value="Custom"/>
+      <ExtraDataItem name="GUI/SoftKeyboardSelectedLayout" value="{25867c1e-0455-4303-bf76-1c3ae4cca042}"/>
       <ExtraDataItem name="GUI/SplitterSizes" value="244,490"/>
       <ExtraDataItem name="GUI/Statusbar" value="false"/>
       <ExtraDataItem name="GUI/SuppressMessages" value="confirmInputCapture,remindAboutMouseIntegration,remindAboutAutoCapture"/>
@@ -26,6 +27,7 @@
     </ExtraData>
     <MachineRegistry>
       <MachineEntry uuid="{771d0e6c-5779-4515-921a-a32d53d6efd0}" src="/home/freebsd/vbox/freebsd/freebsd.vbox"/>
+      <MachineEntry uuid="{5795d9c0-e5b9-496b-acb4-63ee1fa8d236}" src="/home/freebsd/VirtualBox VMs/void/void.vbox"/>
     </MachineRegistry>
     <NetserviceRegistry>
       <DHCPServers>

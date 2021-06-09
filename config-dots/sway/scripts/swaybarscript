@@ -3,18 +3,16 @@
 # If not, do "killall swaybar" and $mod+Shift+c to reload the configuration.
 
 # Produces "21 days", for example
-uptime_formatted=$(uptime | cut -d ',' -f1  | cut -d ' ' -f6)
-
+uptime_formatted=$(uptime | cut -d " " -f 1)
 # The abbreviated weekday (e.g., "Sat"), followed by the ISO-formatted date
 # like 2018-10-06 and the time (e.g., 14:01)
 date_formatted=$(date "+%a %F %H:%M")
 unix_date=$(date "+%s")
 # Get the Linux version but remove the "-1-ARCH" part
-bsd_version=$(uname -r | cut -d '-' -f1)
 bsd_subversion=$(uname -K)
-
+ip=$(ifconfig | grep "netmask 0xffff" | cut -d " " -f 2)
 # Returns the battery status: "Full", "Discharging", or "Charging".
 # battery_status=$(cat /sys/class/power_supply/BAT0/status)
 
 # Emojis and characters for the status bar
-echo "version is $bsd_version || build is $bsd_subversion || date is $date_formatted || unix epoch time is $unix_date"
+echo "uptime is $uptime_formatted || ip is $ip || build is $bsd_subversion || date is $date_formatted || unix epoch time is $unix_date"

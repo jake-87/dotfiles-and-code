@@ -37,7 +37,6 @@ export ARCHFLAGS="-arch x86_64"
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
-# alias ohmyzsh="mate ~/.oh-my-zsh"
 if test -z "${XDG_RUNTIME_DIR}"; then export XDG_RUNTIME_DIR=/tmp/${UID}-runtime-dir
 	if ! test -d "${XDG_RUNTIME_DIR}"; then
 		mkdir "${XDG_RUNTIME_DIR}"
@@ -45,15 +44,18 @@ if test -z "${XDG_RUNTIME_DIR}"; then export XDG_RUNTIME_DIR=/tmp/${UID}-runtime
 	fi
 fi
 alias la="ls -lah"
-# ,theme.sh brogrammer
 alias init="doas init"
 export PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin:/home/freebsd/bin:/home/freebsd/.cargo/bin:/usr/local/lib/qt5/bin/qmake
 export QMAKESPEC=freebsd-clang
-# ,donut &
 export EDITOR=nvim
 alias back=-
-markdownview() { markdown "$1" | lynx -stdin; }
-alias wahoo=echo "Mario time!"
 alias gitinfo="onefetch"
 alias hx=hexyl
+OMP_NUM_THREADS=4
+export OMP_NUM_THREADS
+alias htop="bashtop"
+export PATH=$PATH:$HOME/.local/bin
 export LD_LIBRARY_PATH=/usr/local/include/:${LD_LIBRARY_PATH}
+alias winget="echo no."
+alias nano="vim"
+fortune
