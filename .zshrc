@@ -56,6 +56,5 @@ export OMP_NUM_THREADS
 alias htop="bashtop"
 export PATH=$PATH:$HOME/.local/bin
 export LD_LIBRARY_PATH=/usr/local/include/:${LD_LIBRARY_PATH}
-alias winget="echo no."
-alias nano="vim"
+alias links="browsh"
 fortune
