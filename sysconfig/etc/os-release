@@ -1,0 +1,9 @@
+NAME=FreeBSD
+VERSION=14.0-CURRENT
+VERSION_ID=14.0
+ID=freebsd
+ANSI_COLOR="0;31"
+PRETTY_NAME="FreeBSD 14.0-CURRENT"
+CPE_NAME=cpe:/o:freebsd:freebsd:14.0
+HOME_URL=https://FreeBSD.org/
+BUG_REPORT_URL=https://bugs.FreeBSD.org/

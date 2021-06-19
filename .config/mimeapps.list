@@ -1,0 +1,27 @@
+[Default Applications]
+x-scheme-handler/http=userapp-Firefox-5Q2Z10.desktop
+x-scheme-handler/https=userapp-Firefox-5Q2Z10.desktop
+x-scheme-handler/ftp=userapp-Firefox-5Q2Z10.desktop
+x-scheme-handler/chrome=userapp-Firefox-5Q2Z10.desktop
+text/html=userapp-Firefox-5Q2Z10.desktop
+application/x-extension-htm=userapp-Firefox-5Q2Z10.desktop
+application/x-extension-html=userapp-Firefox-5Q2Z10.desktop
+application/x-extension-shtml=userapp-Firefox-5Q2Z10.desktop
+application/xhtml+xml=userapp-Firefox-5Q2Z10.desktop
+application/x-extension-xhtml=userapp-Firefox-5Q2Z10.desktop
+application/x-extension-xht=userapp-Firefox-5Q2Z10.desktop
+
+[Added Associations]
+x-scheme-handler/http=userapp-Firefox-M4ZFV0.desktop;userapp-Firefox-O7ABZ0.desktop;userapp-Firefox-5Q2Z10.desktop;
+x-scheme-handler/https=userapp-Firefox-M4ZFV0.desktop;userapp-Firefox-O7ABZ0.desktop;userapp-Firefox-5Q2Z10.desktop;
+x-scheme-handler/ftp=userapp-Firefox-M4ZFV0.desktop;userapp-Firefox-O7ABZ0.desktop;userapp-Firefox-5Q2Z10.desktop;
+x-scheme-handler/chrome=userapp-Firefox-M4ZFV0.desktop;userapp-Firefox-O7ABZ0.desktop;userapp-Firefox-5Q2Z10.desktop;
+text/html=userapp-Firefox-M4ZFV0.desktop;userapp-Firefox-O7ABZ0.desktop;userapp-Firefox-5Q2Z10.desktop;
+application/x-extension-htm=userapp-Firefox-M4ZFV0.desktop;userapp-Firefox-O7ABZ0.desktop;userapp-Firefox-5Q2Z10.desktop;
+application/x-extension-html=userapp-Firefox-M4ZFV0.desktop;userapp-Firefox-O7ABZ0.desktop;userapp-Firefox-5Q2Z10.desktop;
+application/x-extension-shtml=userapp-Firefox-M4ZFV0.desktop;userapp-Firefox-O7ABZ0.desktop;userapp-Firefox-5Q2Z10.desktop;
+application/xhtml+xml=userapp-Firefox-M4ZFV0.desktop;userapp-Firefox-O7ABZ0.desktop;userapp-Firefox-5Q2Z10.desktop;
+application/x-extension-xhtml=userapp-Firefox-M4ZFV0.desktop;userapp-Firefox-O7ABZ0.desktop;userapp-Firefox-5Q2Z10.desktop;
+application/x-extension-xht=userapp-Firefox-M4ZFV0.desktop;userapp-Firefox-O7ABZ0.desktop;userapp-Firefox-5Q2Z10.desktop;
+application/vnd.openxmlformats-officedocument.wordprocessingml.document=userapp-Firefox-5Q2Z10.desktop;
+image/jpeg=firefox.desktop;

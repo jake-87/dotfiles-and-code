@@ -1,3 +1,0 @@
-#! /usr/local/bin/bash
-fortune > /etc/motd
-#return 0;

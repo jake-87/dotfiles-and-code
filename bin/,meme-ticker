@@ -1,2 +1,0 @@
-#! /usr/local/bin/bash
-while true; do clear; ,ticker.sh GME DOGE-USD BTC-USD ETH-USD; sleep 5; done
