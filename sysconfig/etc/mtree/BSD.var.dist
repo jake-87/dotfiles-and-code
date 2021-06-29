@@ -74,8 +74,6 @@
     preserve
     ..
     run
-        bhyve
-        ..
         dhclient
         ..
         ppp             gname=network mode=0770

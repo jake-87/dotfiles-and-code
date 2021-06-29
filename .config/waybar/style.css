@@ -1,0 +1,40 @@
+* {
+    border: none;
+    border-radius: 0;
+    font-family: monospace;
+    font-size: 13px;
+    min-height: 0;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+window#waybar {
+    background: #1e1e1e;
+    border-bottom: 3px solid rgba(100, 114, 125, 0.5);
+    color: #ffd7af;
+}
+#window {
+	border-radius: 5px;
+	border: 2px solid #ffd7af;
+}
+#workspaces button {
+    padding: 5px 5px;
+    background: transparent;
+    color: #ffd7af;
+	border: 2px solid transparent;
+	border-radius: 5px;
+}
+
+#workspaces button.focused {
+    border: 2px solid #ffd7af;
+	border-radius: 5px;
+	background: #4d4d4d;
+}
+
+#cpu, #clock, #memory {
+    padding: 5px 10px;
+    margin: 0 5px;
+	color: #ffd7af;
+	border-radius: 5px;
+	border: 2px solid #ffd7af;
+}

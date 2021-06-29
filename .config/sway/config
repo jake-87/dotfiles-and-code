@@ -210,6 +210,7 @@ bindsym $mod+Shift+a mode "resize"
 #
 # Read `man 5 sway-bar` for more information about this section.
 bar {
+	swaybar_command waybar
     position top
 	font Hack 9.5
 	gaps 10

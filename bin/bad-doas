@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+bad-doas ()
+{
+	doas $@
+}
+sleep 1
+bad-doas $@

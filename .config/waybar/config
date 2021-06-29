@@ -1,0 +1,19 @@
+{
+    "layer": "top",
+    "modules-left": ["sway/workspaces"],
+    "modules-center": ["sway/window"],
+    "modules-right": ["memory", "clock", "cpu"],
+    "sway/window": {
+        "max-length": 50
+    },
+    "clock": {
+        "format": "Date : {:%a, %d. %b  %H:%M}"
+    },
+	"cpu": {
+    	"interval": 10,
+    	"format": "CPU : {usage}%",
+	},
+	"memory": {
+		"format": "Mem : {percentage}%"
+	}
+}

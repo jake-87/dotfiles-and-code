@@ -5,7 +5,7 @@
 
 # PROVIDE: routed dynamicrouting
 # REQUIRE: netif routing
-# BEFORE: NETWORKING
+# BEFORE: NETWORK
 # KEYWORD: nojailvnet
 
 . /etc/rc.subr
