@@ -7,8 +7,9 @@ if [ "$EUID" -ne 0 ]; then
 	echo "This script must be run as root."
 	exit
 fi
-cp .config $HOME/.config 
-cp sysconfig/etc/rc.conf /etc/rc.conf
-cp sysconfig/loader.conf /boot/loader.conf
+cp -rv bin $HOME/bin
+cp -rv .config $HOME/.config 
+cp -rv sysconfig/etc/rc.conf /etc/rc.conf
+cp -rv sysconfig/loader.conf /boot/loader.conf
 pkg install $(cat prime-list)
 echo "Now reboot."
