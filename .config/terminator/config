@@ -5,7 +5,7 @@
     background_color = "#1e1e1e"
     cursor_shape = underline
     cursor_color = "#ffd7af"
-    font = Hack 9
+    font = Hack 10
     foreground_color = "#ffd7af"
     show_titlebar = False
     scrollbar_position = hidden

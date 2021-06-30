@@ -1056,8 +1056,6 @@
         ..
         soelim
         ..
-        sort
-        ..
         stat
         ..
         tail
@@ -1095,8 +1093,6 @@
     ..
     usr.sbin
         chown
-        ..
-        daemon
         ..
         etcupdate
         ..

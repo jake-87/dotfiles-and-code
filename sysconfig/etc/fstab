@@ -1,3 +1,4 @@
 # Device	Mountpoint	FStype	Options	Dump	Pass#
-/dev/ada0s1a	/		ufs	rw	1	1
-/dev/ada0s1b	none		swap	sw	0	0
+/dev/ada1s1a	/		ufs	rw	1	1
+/dev/ada1s1d	/usr		ufs	rw	2	2
+/dev/ada1s1b	none		swap	sw	0	0

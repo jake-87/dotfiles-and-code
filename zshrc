@@ -61,4 +61,5 @@ alias links="browsh"
 alias cmatrix="cmatrix -C cyan"
 alias cp="cp -v"
 alias mv="mv -v"
+alias head="sed 11q" # see http://harmful.cat-v.org/software/
 fortune

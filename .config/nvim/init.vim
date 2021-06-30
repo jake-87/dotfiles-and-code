@@ -1,4 +1,5 @@
-:set nu
+set number
+set relativenumber
 call plug#begin('~/.vim/plugged')
 Plug  'dense-analysis/ale'
 Plug  'arakashic/chromatica.nvim'

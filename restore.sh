@@ -1,15 +1,12 @@
 #!/usr/bin/env bash
-if [ $(uname -a ) -ne "FreeBSD" ]; then
-	echo "This script must be run on a FreeBSD system!"
-	exit
-fi
-if [ "$EUID" -ne 0 ]; then
-	echo "This script must be run as root."
-	exit
-fi
+mkdir $HOME/Documents
+cp -rv small-projects $HOME/Documents/
+cp -rv zshrc $HOME/.zshrc
 cp -rv bin $HOME/bin
-cp -rv .config $HOME/.config 
-cp -rv sysconfig/etc/rc.conf /etc/rc.conf
-cp -rv sysconfig/loader.conf /boot/loader.conf
-pkg install $(cat prime-list)
+cp -rv .config $HOME/.config
+doas rm -rv /etc/rc.conf
+doas cp -rv sysconfig/etc/rc.conf /etc/rc.conf
+doas rm -rf /boot/loader.conf
+doas cp -rv sysconfig/loader.conf /boot/loader.conf
+doas pkg install $(cat prime-list)
 echo "Now reboot."
