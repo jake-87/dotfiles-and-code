@@ -1,51 +1,81 @@
-00:00:00.056837 main     VirtualBox XPCOM Server 6.1.18 r142142 freebsd.amd64 (Apr 11 2021 19:58:59) release log
-00:00:00.056856 main     Log opened 2021-04-21T10:11:26.372878000Z
-00:00:00.056857 main     Build Type: release
-00:00:00.056871 main     OS Product: FreeBSD
-00:00:00.056875 main     OS Release: 13.0-RELEASE
-00:00:00.056879 main     OS Version: FreeBSD 13.0-RELEASE #0 releng/13.0-n244733-ea31abc261f: Fri Apr  9 04:24:09 UTC 2021     root@releng1.nyi.freebsd.org:/usr/obj/usr/src/amd64.amd64/sys/GENERIC
-00:00:00.056883 main     Firmware type: failed - VERR_NOT_SUPPORTED
-00:00:00.056906 main     Host RAM: 3843MB (3.7GB) total, 3284MB (3.2GB) available
-00:00:00.056912 main     Executable: /usr/local/lib/virtualbox/VBoxSVC
-00:00:00.056913 main     Process ID: 65055
-00:00:00.056913 main     Package type: BSD_64BITS_GENERIC (OSE)
-00:00:00.058777 main     IPC socket path: /tmp/.vbox-freebsd-ipc/ipcd
-00:00:00.167882 nspr-2   VirtualBox: object creation starts
-00:00:00.168021 nspr-2   Home directory: '/home/freebsd/.config/VirtualBox'
-00:00:00.192903 nspr-2   Loading settings file "/home/freebsd/.config/VirtualBox/VirtualBox.xml" with version "1.12-freebsd"
-00:00:01.240042 nspr-2   HostDnsMonitor: initializing
-00:00:01.240134 nspr-2   NAT: resolv.conf: nameserver 1.1.1.1
-00:00:01.240144 nspr-2   NAT: resolv.conf: nameserver 8.8.8.8
-00:00:01.240196 nspr-2   HostDnsMonitor: updating information
-00:00:01.240212 nspr-2   HostDnsMonitor: old information
-00:00:01.240215 nspr-2     no server entries
-00:00:01.240218 nspr-2     no domain set
-00:00:01.240220 nspr-2     no search string entries
-00:00:01.240235 nspr-2   HostDnsMonitor: new information
-00:00:01.240237 nspr-2     server 1: 1.1.1.1
-00:00:01.240240 nspr-2     server 2: 8.8.8.8
-00:00:01.240242 nspr-2     domain: 1.1.1.1
-00:00:01.240244 nspr-2     search string 1: 1.1.1.1
-00:00:01.241633 nspr-2   HostPowerServiceLinux: DBus connection Error (Failed to connect to socket /var/run/dbus/system_bus_socket: No such file or directory)
-00:00:01.366504 nspr-2   VD: VDInit finished with VINF_SUCCESS
-00:00:01.366636 nspr-2   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={027bc463-929c-40e8-bf16-fea557cd8e7e} aComponent={SystemPropertiesWrap} aText={Cannot determine default Guest Additions ISO location. Most likely they are not available}, preserve=false aResultDetail=0
-00:00:01.444385 nspr-2   Loading settings file "/home/freebsd/vbox/freebsd/freebsd.vbox" with version "1.15-freebsd"
-00:00:01.480101 nspr-2   VirtualBox: object created
-00:00:08.225334 nspr-3   ERROR [COM]: aRC=VBOX_E_OBJECT_NOT_FOUND (0x80bb0001) aIID={d0a0163f-e254-4e5b-a1f2-011cf991c38d} aComponent={VirtualBoxWrap} aText={Could not find a registered machine named 'fedora'}, preserve=false aResultDetail=0
-00:03:22.165822 nspr-4   Launched VM: 44141376 pid: 67442 (0x10772) frontend: GUI/Qt name: freebsd
-00:03:23.526798 nspr-6   ERROR [COM]: aRC=VBOX_E_OBJECT_NOT_FOUND (0x80bb0001) aIID={70401eef-c8e9-466b-9660-45cb3e9979e4} aComponent={ExtPackManagerWrap} aText={No extension pack by the name 'Oracle VM VirtualBox Extension Pack' was found}, preserve=false aResultDetail=0
-00:03:23.764897 nspr-4   ERROR [COM]: aRC=VBOX_E_IPRT_ERROR (0x80bb0005) aIID={85632c68-b5bb-4316-a900-5eb28d3413df} aComponent={SessionMachine} aText={Saved screenshot data is not available (VERR_NOT_SUPPORTED)}, preserve=false aResultDetail=-37
-00:36:56.901042 nspr-3   Saving settings file "/home/freebsd/vbox/freebsd/freebsd.vbox" with version "1.15-freebsd"
-10:25:55.676295 main     VirtualBox: object deletion starts
-10:25:55.718033 main     ERROR [COM]: aRC=VBOX_E_OBJECT_IN_USE (0x80bb000c) aIID={ad47ad09-787b-44ab-b343-a082a3f2dfb1} aComponent={MediumWrap} aText={Medium '/home/freebsd/vbox/freebsd/freebsd.vdi' cannot be closed because it is still attached to 1 virtual machines}, preserve=false aResultDetail=0
-10:25:55.808886 main     HostDnsMonitor: shutting down ...
-10:25:55.808903 main     HostDnsMonitor: shut down
-10:25:55.808972 main     {0000000802e70640} HostPowerServiceLinux::~HostPowerServiceLinux: RTThreadWait() for 5000 ms failed with VERR_INVALID_HANDLE
-10:25:55.864801 main     
-10:25:55.864804 main     !!Assertion Failed!!
-10:25:55.864805 main     Expression: state <= 1 && ( (state == 0 && count == 0) || (state == 1 && count < PR_UINT32_MAX/2))
-10:25:55.864807 main     Location  : /wrkdirs/usr/ports/emulators/virtualbox-ose/work/VirtualBox-6.1.18/src/libs/xpcom18a4/ipc/ipcd/extensions/dconnect/src/ipcDConnectService.cpp(3442) virtual nsrefcnt ipcDConnectService::AddRef()
-10:25:55.864823 main     Stack     :
-10:25:55.864824 main     0000000800a4e82d
-10:25:55.864825 main     
-10:25:55.890773 main     AddRef: illegal refcnt=3221225469 state=2
+00:00:00.011160 main     VirtualBox XPCOM Server 6.1.22 r144080 freebsd.amd64 (May  4 2021 08:18:53) release log
+00:00:00.011165 main     Log opened 2021-06-03T06:59:22.727063000Z
+00:00:00.011166 main     Build Type: release
+00:00:00.011181 main     OS Product: FreeBSD
+00:00:00.011187 main     OS Release: 14.0-CURRENT
+00:00:00.011193 main     OS Version: FreeBSD 14.0-CURRENT #3 main-n247020-e0fa04e257c: Sat May 29 19:39:25 AEST 2021     root@fbsd:/usr/obj/usr/src/amd64.amd64/sys/GENERIC
+00:00:00.011197 main     Firmware type: failed - VERR_NOT_SUPPORTED
+00:00:00.011224 main     Host RAM: 3841MB (3.7GB) total, 3227MB (3.1GB) available
+00:00:00.011230 main     Executable: /usr/local/lib/virtualbox/VBoxSVC
+00:00:00.011230 main     Process ID: 1763
+00:00:00.011231 main     Package type: BSD_64BITS_GENERIC (OSE)
+00:00:00.013689 main     IPC socket path: /tmp/.vbox-freebsd-ipc/ipcd
+00:00:00.123148 nspr-2   VirtualBox: object creation starts
+00:00:00.123299 nspr-2   Home directory: '/home/freebsd/.config/VirtualBox'
+00:00:00.137222 nspr-2   Loading settings file "/home/freebsd/.config/VirtualBox/VirtualBox.xml" with version "1.12-freebsd"
+00:00:01.155350 nspr-2   HostDnsMonitor: initializing
+00:00:01.155447 nspr-2   NAT: resolv.conf: nameserver 1.1.1.1
+00:00:01.155459 nspr-2   NAT: resolv.conf: nameserver 8.8.8.8
+00:00:01.155539 nspr-2   HostDnsMonitor: updating information
+00:00:01.155560 nspr-2   HostDnsMonitor: old information
+00:00:01.155565 nspr-2     no server entries
+00:00:01.155570 nspr-2     no domain set
+00:00:01.155573 nspr-2     no search string entries
+00:00:01.155577 nspr-2   HostDnsMonitor: new information
+00:00:01.155580 nspr-2     server 1: 1.1.1.1
+00:00:01.155584 nspr-2     server 2: 8.8.8.8
+00:00:01.155587 nspr-2     domain: 1.1.1.1
+00:00:01.155591 nspr-2     search string 1: 1.1.1.1
+00:00:01.157138 nspr-2   HostPowerServiceLinux: DBus connection Error (Failed to connect to socket /var/run/dbus/system_bus_socket: No such file or directory)
+00:00:01.265440 nspr-2   VD: VDInit finished with VINF_SUCCESS
+00:00:01.265653 nspr-2   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={027bc463-929c-40e8-bf16-fea557cd8e7e} aComponent={SystemPropertiesWrap} aText={Cannot determine default Guest Additions ISO location. Most likely they are not available}, preserve=false aResultDetail=0
+00:00:01.323586 nspr-2   Loading settings file "/home/freebsd/vbox/freebsd/freebsd.vbox" with version "1.15-freebsd"
+00:00:01.393584 nspr-2   Loading settings file "/home/freebsd/VirtualBox VMs/bedrock/bedrock.vbox" with version "1.16-freebsd"
+00:00:01.394283 nspr-2   VirtualBox: object created
+00:00:09.009960 nspr-5   ERROR [COM]: aRC=VBOX_E_OBJECT_NOT_FOUND (0x80bb0001) aIID={d0a0163f-e254-4e5b-a1f2-011cf991c38d} aComponent={VirtualBoxWrap} aText={Could not find a registered machine named 'fedora'}, preserve=false aResultDetail=0
+00:00:17.285058 nspr-5   Launched VM: 44142480 pid: 2026 (0x7ea) frontend: GUI/Qt name: bedrock
+00:00:18.841836 nspr-2   ERROR [COM]: aRC=VBOX_E_OBJECT_NOT_FOUND (0x80bb0001) aIID={70401eef-c8e9-466b-9660-45cb3e9979e4} aComponent={ExtPackManagerWrap} aText={No extension pack by the name 'Oracle VM VirtualBox Extension Pack' was found}, preserve=false aResultDetail=0
+00:00:19.133849 nspr-2   ERROR [COM]: aRC=VBOX_E_IPRT_ERROR (0x80bb0005) aIID={85632c68-b5bb-4316-a900-5eb28d3413df} aComponent={SessionMachine} aText={Saved screenshot data is not available (VERR_NOT_SUPPORTED)}, preserve=false aResultDetail=-37
+00:32:02.985022 nspr-2   Saving settings file "/home/freebsd/VirtualBox VMs/bedrock/bedrock.vbox" with version "1.16-freebsd"
+00:32:03.973023 nspr-2   Saving settings file "/home/freebsd/VirtualBox VMs/bedrock/bedrock.vbox" with version "1.16-freebsd"
+01:02:54.009499 nspr-7   Launched VM: 44083632 pid: 45666 (0xb262) frontend: GUI/Qt name: bedrock
+01:02:56.460020 nspr-8   ERROR [COM]: aRC=VBOX_E_OBJECT_NOT_FOUND (0x80bb0001) aIID={70401eef-c8e9-466b-9660-45cb3e9979e4} aComponent={ExtPackManagerWrap} aText={No extension pack by the name 'Oracle VM VirtualBox Extension Pack' was found}, preserve=false aResultDetail=0
+01:02:56.647738 nspr-2   ERROR [COM]: aRC=VBOX_E_IPRT_ERROR (0x80bb0005) aIID={85632c68-b5bb-4316-a900-5eb28d3413df} aComponent={SessionMachine} aText={Saved screenshot data is not available (VERR_NOT_SUPPORTED)}, preserve=false aResultDetail=-37
+04:34:57.417359 nspr-6   Saving settings file "/home/freebsd/VirtualBox VMs/bedrock/bedrock.vbox" with version "1.16-freebsd"
+04:55:14.304428 nspr-7   Saving settings file "/home/freebsd/VirtualBox VMs/bedrock/bedrock.vbox" with version "1.16-freebsd"
+04:55:19.424387 nspr-4   Saving settings file "/home/freebsd/.config/VirtualBox/VirtualBox.xml" with version "1.12-freebsd"
+04:55:53.342011 createBase Saving settings file "/home/freebsd/.config/VirtualBox/VirtualBox.xml" with version "1.12-freebsd"
+04:55:53.871767 nspr-4   Saving settings file "/home/freebsd/VirtualBox VMs/void/void.vbox" with version "1.16-freebsd"
+04:55:53.964484 nspr-3   Saving settings file "/home/freebsd/VirtualBox VMs/void/void.vbox" with version "1.16-freebsd"
+04:55:53.970913 nspr-3   Saving settings file "/home/freebsd/.config/VirtualBox/VirtualBox.xml" with version "1.12-freebsd"
+04:55:53.984828 nspr-3   Saving settings file "/home/freebsd/.config/VirtualBox/VirtualBox.xml" with version "1.12-freebsd"
+04:55:54.025168 nspr-3   Saving settings file "/home/freebsd/VirtualBox VMs/void/void.vbox" with version "1.16-freebsd"
+04:55:56.159310 nspr-5   Launched VM: 44088144 pid: 9389 (0x24ad) frontend: GUI/Qt name: void
+04:55:57.466973 nspr-6   ERROR [COM]: aRC=VBOX_E_OBJECT_NOT_FOUND (0x80bb0001) aIID={70401eef-c8e9-466b-9660-45cb3e9979e4} aComponent={ExtPackManagerWrap} aText={No extension pack by the name 'Oracle VM VirtualBox Extension Pack' was found}, preserve=false aResultDetail=0
+04:55:57.566261 nspr-8   ERROR [COM]: aRC=VBOX_E_IPRT_ERROR (0x80bb0005) aIID={85632c68-b5bb-4316-a900-5eb28d3413df} aComponent={SessionMachine} aText={Saved screenshot data is not available (VERR_NOT_SUPPORTED)}, preserve=false aResultDetail=-37
+04:56:00.276381 nspr-3   Saving settings file "/home/freebsd/VirtualBox VMs/void/void.vbox" with version "1.16-freebsd"
+05:00:20.082496 nspr-5   Saving settings file "/home/freebsd/VirtualBox VMs/void/void.vbox" with version "1.16-freebsd"
+05:00:20.290374 nspr-4   Saving settings file "/home/freebsd/VirtualBox VMs/void/void.vbox" with version "1.16-freebsd"
+05:00:20.927379 nspr-5   Saving settings file "/home/freebsd/VirtualBox VMs/void/void.vbox" with version "1.16-freebsd"
+05:00:21.016856 nspr-4   Saving settings file "/home/freebsd/VirtualBox VMs/void/void.vbox" with version "1.16-freebsd"
+05:00:50.170470 nspr-2   Saving settings file "/home/freebsd/VirtualBox VMs/void/void.vbox" with version "1.16-freebsd"
+05:00:52.123343 nspr-3   Launched VM: 44048368 pid: 12861 (0x323d) frontend: GUI/Qt name: void
+05:00:54.223877 nspr-6   ERROR [COM]: aRC=VBOX_E_OBJECT_NOT_FOUND (0x80bb0001) aIID={70401eef-c8e9-466b-9660-45cb3e9979e4} aComponent={ExtPackManagerWrap} aText={No extension pack by the name 'Oracle VM VirtualBox Extension Pack' was found}, preserve=false aResultDetail=0
+05:00:54.411052 nspr-4   ERROR [COM]: aRC=VBOX_E_IPRT_ERROR (0x80bb0005) aIID={85632c68-b5bb-4316-a900-5eb28d3413df} aComponent={SessionMachine} aText={Saved screenshot data is not available (VERR_NOT_SUPPORTED)}, preserve=false aResultDetail=-37
+05:39:48.721075 nspr-4   Saving settings file "/home/freebsd/VirtualBox VMs/void/void.vbox" with version "1.16-freebsd"
+05:39:49.421128 nspr-4   Saving settings file "/home/freebsd/VirtualBox VMs/void/void.vbox" with version "1.16-freebsd"
+05:40:23.683069 main     VirtualBox: object deletion starts
+05:40:23.683142 main     ERROR [COM]: aRC=VBOX_E_OBJECT_IN_USE (0x80bb000c) aIID={ad47ad09-787b-44ab-b343-a082a3f2dfb1} aComponent={MediumWrap} aText={Medium '/home/freebsd/vbox/freebsd/freebsd.vdi' cannot be closed because it is still attached to 1 virtual machines}, preserve=false aResultDetail=0
+05:40:23.804393 main     ERROR [COM]: aRC=VBOX_E_OBJECT_IN_USE (0x80bb000c) aIID={ad47ad09-787b-44ab-b343-a082a3f2dfb1} aComponent={MediumWrap} aText={Medium '/home/freebsd/VirtualBox VMs/void/void.vdi' cannot be closed because it is still attached to 1 virtual machines}, preserve=false aResultDetail=0
+05:40:23.825147 main     HostDnsMonitor: shutting down ...
+05:40:23.825157 main     HostDnsMonitor: shut down
+05:40:23.846016 main     {0000000802e70680} HostPowerServiceLinux::~HostPowerServiceLinux: RTThreadWait() for 5000 ms failed with VERR_INVALID_HANDLE
+05:40:24.061685 Watcher  ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={d0a0163f-e254-4e5b-a1f2-011cf991c38d} aComponent={VirtualBoxWrap} aText={The object is not ready}, preserve=false aResultDetail=0
+05:40:24.112355 main     
+05:40:24.112358 main     !!Assertion Failed!!
+05:40:24.112359 main     Expression: state <= 1 && ( (state == 0 && count == 0) || (state == 1 && count < PR_UINT32_MAX/2))
+05:40:24.112361 main     Location  : /wrkdirs/usr/ports/emulators/virtualbox-ose/work/VirtualBox-6.1.22/src/libs/xpcom18a4/ipc/ipcd/extensions/dconnect/src/ipcDConnectService.cpp(3442) virtual nsrefcnt ipcDConnectService::AddRef()
+05:40:24.112387 main     Stack     :
+05:40:24.112388 main     0000000800a4f82d
+05:40:24.112389 main     
+05:40:24.112445 main     AddRef: illegal refcnt=3221225469 state=2

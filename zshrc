@@ -62,4 +62,7 @@ alias cmatrix="cmatrix -C cyan"
 alias cp="cp -v"
 alias mv="mv -v"
 alias head="sed 11q" # see http://harmful.cat-v.org/software/
+alias rg="ranger"
+alias feh="nomacs"
 fortune
+alias fex="find . | grep -v git | xargs grep"

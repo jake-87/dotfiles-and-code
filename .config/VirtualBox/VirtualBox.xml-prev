@@ -9,33 +9,34 @@
   <Global>
     <ExtraData>
       <ExtraDataItem name="GUI/Details/Elements" value="general,system,preview,display,storage,audio,network,usb,sharedFolders,description"/>
-      <ExtraDataItem name="GUI/GroupDefinitions/" value="n=GLOBAL,m=7402da92-fdc2-45e9-8c86-67ce42b248e2"/>
       <ExtraDataItem name="GUI/HostNetworkManager/Details/Expanded" value="true"/>
-      <ExtraDataItem name="GUI/LastItemSelected" value="m=haiku"/>
+      <ExtraDataItem name="GUI/LastItemSelected" value="m=NetBSD"/>
       <ExtraDataItem name="GUI/LastWindowPosition" value="40,56,1520,804,max"/>
-      <ExtraDataItem name="GUI/RecentFolderCD" value="/home/freebsd/vbox"/>
-      <ExtraDataItem name="GUI/RecentListCD" value="/home/freebsd/vbox/void-live-x86_64-20210218.iso,/home/freebsd/vbox/freebsd-13.0-release.iso,/home/freebsd/linux-stuff/debian-10.8.0-amd64-netinst.iso,/home/freebsd/linux-stuff/Fedora-Server-dvd-x86_64-33-1.2.iso,/home/freebsd/linux-stuff/Fedora-Server-netinst-x86_64-33-1.2.iso"/>
+      <ExtraDataItem name="GUI/RecentFolderCD" value="/usr/home/freebsd/Documents/vbox/isos"/>
+      <ExtraDataItem name="GUI/RecentListCD" value="/usr/home/freebsd/Documents/vbox/isos/alpine-standard-3.14.0-x86_64.iso,/usr/home/freebsd/Documents/vbox/isos/debian-10.10.0-amd64-netinst.iso,/usr/home/freebsd/Documents/vbox/isos/void-live-x86_64-20210218.iso,/usr/home/freebsd/Documents/vbox/isos/NetBSD-9.2-amd64.iso,--"/>
       <ExtraDataItem name="GUI/SoftKeyboardColorTheme" value="Custom,#ff878787,#ff000000,#ff676767,#ff9b6767,#fffafafa"/>
       <ExtraDataItem name="GUI/SoftKeyboardDialogGeometry" value="1068,56,492,804,max"/>
       <ExtraDataItem name="GUI/SoftKeyboardSelectedColorTheme" value="Custom"/>
       <ExtraDataItem name="GUI/SoftKeyboardSelectedLayout" value="{25867c1e-0455-4303-bf76-1c3ae4cca042}"/>
       <ExtraDataItem name="GUI/SplitterSizes" value="505,1014"/>
       <ExtraDataItem name="GUI/Statusbar" value="false"/>
-      <ExtraDataItem name="GUI/SuppressMessages" value="confirmInputCapture,remindAboutMouseIntegration,remindAboutAutoCapture"/>
+      <ExtraDataItem name="GUI/SuppressMessages" value="confirmInputCapture,remindAboutMouseIntegration,remindAboutAutoCapture,confirmGoingScale"/>
       <ExtraDataItem name="GUI/Toolbar" value="false"/>
       <ExtraDataItem name="GUI/Toolbar/MachineTools/Order" value="None"/>
+      <ExtraDataItem name="GUI/Tools/LastItemsSelected" value="Welcome,Details"/>
       <ExtraDataItem name="HostOnly/vboxnet0/IPAddress" value="192.168.1.1"/>
       <ExtraDataItem name="HostOnly/vboxnet0/IPNetMask" value="255.255.255.0"/>
     </ExtraData>
     <MachineRegistry>
-      <MachineEntry uuid="{7402da92-fdc2-45e9-8c86-67ce42b248e2}" src="/home/freebsd/vbox/haiku/haiku.vbox"/>
+      <MachineEntry uuid="{3c5d0541-a790-4952-8017-71f89e3b0d74}" src="/home/freebsd/Documents/vbox/NetBSD/NetBSD.vbox"/>
+      <MachineEntry uuid="{9f2c6417-7d83-4905-b853-a912abdc8992}" src="/home/freebsd/Documents/vbox/bedrock linux/bedrock linux.vbox"/>
     </MachineRegistry>
     <NetserviceRegistry>
       <DHCPServers>
         <DHCPServer networkName="HostInterfaceNetworking-vboxnet0" IPAddress="192.168.56.100" networkMask="255.255.255.0" lowerIP="192.168.56.101" upperIP="192.168.56.254" enabled="1"/>
       </DHCPServers>
     </NetserviceRegistry>
-    <SystemProperties defaultMachineFolder="/home/freebsd/vbox" defaultHardDiskFormat="VDI" VRDEAuthLibrary="VBoxAuth" webServiceAuthLibrary="VBoxAuth" LogHistoryCount="3" proxyMode="0" exclusiveHwVirt="true"/>
+    <SystemProperties defaultMachineFolder="/home/freebsd/Documents/vbox" defaultHardDiskFormat="VDI" VRDEAuthLibrary="VBoxAuth" webServiceAuthLibrary="VBoxAuth" LogHistoryCount="3" proxyMode="0" exclusiveHwVirt="true"/>
     <USBDeviceFilters/>
   </Global>
 </VirtualBox>

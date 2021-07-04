@@ -1,4 +1,7 @@
 configuration {
+ 	modi: "window,drun,ssh,combi";
+ 	theme: "solarized";
+ 	font: "hack 13";
 	theme: "./custom.theme";
 }
 @import "/usr/local/share/rofi/themes/gruvbox-dark-hard.rasi"

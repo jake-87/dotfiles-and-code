@@ -1300,30 +1300,6 @@
   <resource identifier="${gimp_data_dir}/palettes/Web.gpl" checksum="f02e8dfa23d01d6acfbab7f895c2dd16">
   </resource>
 
-  <resource identifier="Caladea" checksum="(null)">
-  </resource>
-
-  <resource identifier="Caladea Bold" checksum="(null)">
-  </resource>
-
-  <resource identifier="Caladea Bold Italic" checksum="(null)">
-  </resource>
-
-  <resource identifier="Caladea Italic" checksum="(null)">
-  </resource>
-
-  <resource identifier="Carlito" checksum="(null)">
-  </resource>
-
-  <resource identifier="Carlito Bold" checksum="(null)">
-  </resource>
-
-  <resource identifier="Carlito Bold Italic" checksum="(null)">
-  </resource>
-
-  <resource identifier="Carlito Italic" checksum="(null)">
-  </resource>
-
   <resource identifier="DejaVu Math TeX Gyre" checksum="(null)">
   </resource>
 
@@ -1420,28 +1396,13 @@
   <resource identifier="Estrangelo TurAbdin" checksum="(null)">
   </resource>
 
-  <resource identifier="Gentium Basic" checksum="(null)">
+  <resource identifier="Font Awesome 5 Brands" checksum="(null)">
   </resource>
 
-  <resource identifier="Gentium Basic Bold" checksum="(null)">
+  <resource identifier="Font Awesome 5 Free" checksum="(null)">
   </resource>
 
-  <resource identifier="Gentium Basic Bold Italic" checksum="(null)">
-  </resource>
-
-  <resource identifier="Gentium Basic Italic" checksum="(null)">
-  </resource>
-
-  <resource identifier="Gentium Book Basic" checksum="(null)">
-  </resource>
-
-  <resource identifier="Gentium Book Basic Bold" checksum="(null)">
-  </resource>
-
-  <resource identifier="Gentium Book Basic Bold Italic" checksum="(null)">
-  </resource>
-
-  <resource identifier="Gentium Book Basic Italic" checksum="(null)">
+  <resource identifier="Font Awesome 5 Free Heavy" checksum="(null)">
   </resource>
 
   <resource identifier="Goha-Tibeb Zemen Medium" checksum="(null)">
@@ -1457,72 +1418,6 @@
   </resource>
 
   <resource identifier="Hack Italic" checksum="(null)">
-  </resource>
-
-  <resource identifier="Liberation Mono" checksum="(null)">
-  </resource>
-
-  <resource identifier="Liberation Mono Bold" checksum="(null)">
-  </resource>
-
-  <resource identifier="Liberation Mono Bold Italic" checksum="(null)">
-  </resource>
-
-  <resource identifier="Liberation Mono Italic" checksum="(null)">
-  </resource>
-
-  <resource identifier="Liberation Sans" checksum="(null)">
-  </resource>
-
-  <resource identifier="Liberation Sans Bold" checksum="(null)">
-  </resource>
-
-  <resource identifier="Liberation Sans Bold Italic" checksum="(null)">
-  </resource>
-
-  <resource identifier="Liberation Sans Italic" checksum="(null)">
-  </resource>
-
-  <resource identifier="Liberation Serif" checksum="(null)">
-  </resource>
-
-  <resource identifier="Liberation Serif Bold" checksum="(null)">
-  </resource>
-
-  <resource identifier="Liberation Serif Bold Italic" checksum="(null)">
-  </resource>
-
-  <resource identifier="Liberation Serif Italic" checksum="(null)">
-  </resource>
-
-  <resource identifier="Linux Biolinum G" checksum="(null)">
-  </resource>
-
-  <resource identifier="Linux Biolinum G Bold" checksum="(null)">
-  </resource>
-
-  <resource identifier="Linux Biolinum G Italic" checksum="(null)">
-  </resource>
-
-  <resource identifier="Linux Libertine Display G" checksum="(null)">
-  </resource>
-
-  <resource identifier="Linux Libertine G" checksum="(null)">
-  </resource>
-
-  <resource identifier="Linux Libertine G Bold" checksum="(null)">
-  </resource>
-
-  <resource identifier="Linux Libertine G Bold Italic" checksum="(null)">
-  </resource>
-
-  <resource identifier="Linux Libertine G Italic" checksum="(null)">
-  </resource>
-
-  <resource identifier="Linux Libertine G Semi-Bold" checksum="(null)">
-  </resource>
-
-  <resource identifier="Linux Libertine G Semi-Bold Italic" checksum="(null)">
   </resource>
 
   <resource identifier="Luxi Mono" checksum="(null)">
@@ -6662,9 +6557,6 @@
   </resource>
 
   <resource identifier="Serto Urhoy Bold" checksum="(null)">
-  </resource>
-
-  <resource identifier="Twitter Color Emoji" checksum="(null)">
   </resource>
 
   <resource identifier="${gimp_data_dir}/tool-presets/Crop/16_10.gtp" checksum="(null)">
