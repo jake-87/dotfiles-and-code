@@ -57,7 +57,6 @@ export OMP_NUM_THREADS
 alias htop="bashtop"
 export PATH=$PATH:$HOME/.local/bin
 export LD_LIBRARY_PATH=/usr/local/include/:${LD_LIBRARY_PATH}
-alias links="browsh"
 alias cmatrix="cmatrix -C cyan"
 alias cp="cp -v"
 alias mv="mv -v"

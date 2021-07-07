@@ -35,4 +35,5 @@ set softtabstop=0 noexpandtab
 set shiftwidth=4
 syntax on
 nmap W :noh<CR>
+autocmd BufEnter *.asm setfiletype nasm
 let g:airline_theme='deus'

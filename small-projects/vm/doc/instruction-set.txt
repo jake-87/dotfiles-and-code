@@ -1,0 +1,72 @@
+Math operations
+
+inc x -- increment x, sets FSIGN, FZERO, FPARI as appropriate
+dec x -- decrement x, sets FSIGN, FZERO, FPARI as appropriate
+add x, y -- add y to x, sets FSIGN, FZERO, FPARI as appropriate
+sub x, y -- subtract y from x, sets FSIGN, FZERO, FPARI as appropriate
+psh x -- push number x onto stack
+pop x -- pop top of stack into x
+
+Move 
+mov x, y -- move the value of y into x, sets FSIGN, FZERO, FPARI as appropriate
+
+Bitwise operations
+and x, y -- bitwise and y and x, storing result in x, sets FSIGN, FZERO, FPARI as appropriate
+or x, y -- bitwise or y and x, storing result in x, sets FSIGN, FZERO, FPARI as appropriate
+xor x, y -- bitwise xor y and x, storing result in x, sets FSIGN, FZERO, FPARI as appropriate
+not x, y -- bitwise not y and x, storing result in x, sets FSIGN, FZERO, FPARI as appropriate
+
+Jumps
+je lable -- jump to lable if zero flag is 1
+jne lable -- jump to lable if zero flag is 0
+
+Interupts
+int x -- call kernel with lable x
+
+Comparisons
+cmp x, y -- compare x and y, setting zero flag if equal
+
+Labels
+lbl label -- set a lable, where "label" is a hex code between 0x0A00 and 0x0B00, giving you 256 possible lables. 
+jmp label -- unconditional jump to lable
+brn label -- jump to label if sign flag is 1
+brp label -- jump to label if sign flag is 0
+
+Exiting
+ret x -- return value x and exit
+hlt -- halts the program immediatly, does no cleanup and exits
+
+Memory allocation
+db name "string" OR db name (8 bit signed value) -- allocated a string or 8 bit signed value
+dw name (16 bit signed value) -- allocate a 16 bit signed value
+
+
+
+
+Key for hex codes:
+
+inc -- 0x0001
+dec -- 0x0002
+add -- 0x0003
+sub -- 0x0004
+mov -- 0x0005
+and -- 0x0006
+or -- 0x0007
+xor -- 0x0008
+not -- 0x0009
+je -- 0x000A
+jne -- 0x000B
+int -- 0x000C
+cmp -- 0x000D
+lbl -- 0x000E
+jmp -- 0x000F
+brn -- 0x0010
+brp -- 0x0011
+ret -- 0x0012
+db -- 0x0013
+end_db -- 0x0114
+dw -- 0x015
+end_dw -- 0x0016
+psh -- 0x0017
+pop -- 0x0018
+hlt -- 0x00FF

@@ -1,0 +1,4 @@
+Each of these values is a signed int16.
+This allows each of them to store a number from -32767 to 32767.
+0x0001 - 0x00FF -- System reserved (Includes flags, registers, interupts, so on)
+0x0010 - 0xFFFF -- (virtual) Allocatable memory
