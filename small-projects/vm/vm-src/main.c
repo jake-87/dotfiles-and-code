@@ -2,6 +2,14 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "interpolate.h"
+void check(unsigned int * ibuf) {
+	unsigned int check[2] = {0xABCD, 0xABCD};
+	for (int i = 0; i < 2; i++) {
+		if (ibuf[i] != check[i]) {
+			hacf("Not a ksmvm file!", -1, -1);
+		}
+	}
+}
 int main(int argc, char ** argv) {
 	if (argc < 2) {
 		printf("Useage: ./vm \"filename\"\n");
@@ -24,7 +32,10 @@ int main(int argc, char ** argv) {
 		tmpshift = (unsigned int) buf[i + 1];
 		ibuf[(int) i / 2] = tmp + tmpshift;
 	}
-	interpolate(ibuf);
+	check(ibuf);
+	ibuf += 2;
+	fsize -= 4;
+	interpolate(ibuf, fsize);
 	free(buf);
 	free(ibuf);
 	return 0;

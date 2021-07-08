@@ -8,7 +8,7 @@ Plug  'jiangmiao/auto-pairs', { 'for' : ['c','f90']}
 Plug 'preservim/nerdtree'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'rktjmp/lush.nvim'
+Plug 'ParamagicDev/vim-medic_chalk'
 call plug#end()
 let g:ale_linters = {
     \ 'python': ['pylint'],
@@ -33,6 +33,7 @@ set softtabstop=0 noexpandtab
 set shiftwidth=4
 syntax on
 nmap W :noh<CR>
+colorscheme medic_chalk
 set background=dark
 autocmd BufEnter *.asm setfiletype nasm
 let g:airline_theme='deus'

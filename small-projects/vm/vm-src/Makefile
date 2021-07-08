@@ -1,5 +1,5 @@
 SRC != ls *.c
-TARGET = vm
+TARGET = ksmvm
 CFLAGS = -g -O2 -Wall -Wextra
 all:
 	cc $(SRC) -o $(TARGET) $(CFLAGS)

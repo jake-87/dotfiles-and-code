@@ -1,4 +1,8 @@
 #include "interpolate.h"
+void hacf(char * message, int i, int ii) {
+	printf("ERROR : %s, code %d, location %d\n",message,i,ii);
+	exit(1);
+}
 void set_flags(int16_t num, uint16_t ** flags) {
 	unsigned int c; // c accumulates the total bits set in v
 	int8_t numback = num & 0xFF;
@@ -31,77 +35,42 @@ void set_flags(int16_t num, uint16_t ** flags) {
 		*flags[FCARY] = 0;
 	}
 }
-void dec(int16_t ** reg, char r, uint16_t ** flags) {
-	switch (r) {
-		case 'A':
-			reg[AX]--;
-			set_flags(*reg[AX], flags);
-			break;
-		case 'B':
-			reg[BX]--;
-			set_flags(*reg[BX], flags);
-			break;
-		case 'C':
-			reg[CX]--;
-			set_flags(*reg[CX], flags);
-			break;
-		case 'D':
-			reg[DX]--;
-			set_flags(*reg[DX], flags);
-			break;
-		case '5':
-			reg[R5]--;
-			set_flags(*reg[R5], flags);
-			break;
-		case '6':
-			reg[R6]--;
-			set_flags(*reg[R6], flags);
-			break;
-		case '7':
-			reg[R7]--;
-			set_flags(*reg[R7], flags);
-			break;
-		case '8':
-			reg[R8]--;
-			set_flags(*reg[R8], flags);
-			break;
+void dec(int16_t ** reg, int16_t i, uint16_t ** flags) {
+	if (i > 0 && i < 9) {
+		reg[i]--;
+		set_flags(*reg[i], flags);
+	}
+	else {
+		hacf("invalid register", 1, i);
 	}
 }
-void inc(int16_t ** reg, char r, uint16_t ** flags) {
-	switch (r) {
-		case 'A':
-			reg[AX]++;
-			set_flags(*reg[AX], flags);
-			break;
-		case 'B':
-			reg[BX]++;
-			set_flags(*reg[BX], flags);
-			break;
-		case 'C':
-			reg[CX]++;
-			set_flags(*reg[CX], flags);
-			break;
-		case 'D':
-			reg[DX]++;
-			set_flags(*reg[DX], flags);
-			break;
-		case '5':
-			reg[R5]++;
-			set_flags(*reg[R5], flags);
-			break;
-		case '6':
-			reg[R6]++;
-			set_flags(*reg[R6], flags);
-			break;
-		case '7':
-			reg[R7]++;
-			set_flags(*reg[R7], flags);
-			break;
-		case '8':
-			reg[R8]++;
-			set_flags(*reg[R8], flags);
-			break;
+void inc(int16_t ** reg, int16_t i, uint16_t ** flags) {
+	if (i > 0 && i < 9) {
+		reg[i]++;
+		set_flags(*reg[i], flags);
 	}
+	else {
+		hacf("invalid register", 1, i);
+	}
+}
+void add(int i, unsigned int * ibuf, uint16_t ** flags, int16_t ** reg, int m) {
+	switch (m) {
+		case 0:
+			if (ibuf[i + 1] < 9 && ibuf[i + 1] > 0) {
+				* reg[ibuf[i + 1]] += ibuf[i + 2];
+				set_flags(*reg[ibuf[i + 1]], flags);
+			}
+			else {
+				hacf("invalid register", 1, i);
+			}
+			break;
+		case 1:
+			if ((ibuf[i + 1] < 9 && ibuf[i + 1] > 0) && (ibuf[i + 2] < 9 && ibuf[i + 2] > 0)) {
+				* reg[ibuf[i + 1]] += ibuf[i + 2];
+			}
+		default:
+			hacf("invalid operand", 2, i);
+	}	
 }
 void interpolate(unsigned int * ibuf, int size) {
 	int16_t * reg = (int16_t *) calloc(1, sizeof(int16_t) * REGMAX);
@@ -115,59 +84,77 @@ void interpolate(unsigned int * ibuf, int size) {
 			case 0x0001:
 				switch(ibuf[i + 1]) {
 					case 0x0001:
-						inc(&reg, 'A', &flags);
+						inc(&reg, ibuf[i + 1], &flags);
 						break;
 					case 0x0002:
-						inc(&reg, 'B', &flags);
+						inc(&reg, ibuf[i + 1], &flags);
 						break;
 					case 0x0003:
-						inc(&reg, 'C', &flags);
+						inc(&reg, ibuf[i + 1], &flags);
 						break;
 					case 0x0004:
-						inc(&reg, 'D', &flags);
+						inc(&reg, ibuf[i + 1], &flags);
 						break;
 					case 0x0005:
-						inc(&reg, '5', &flags);
+						inc(&reg, ibuf[i + 1], &flags);
 						break;
 					case 0x0006:
-						inc(&reg, '6', &flags);
+						inc(&reg, ibuf[i + 1], &flags);
 						break;
 					case 0x0007:
-						inc(&reg, '7', &flags);
+						inc(&reg, ibuf[i + 1], &flags);
 						break;
 					case 0x0008:
-						inc(&reg, '8', &flags);
+						inc(&reg, ibuf[i + 1], &flags);
 						break;
+					default:
+						hacf("illegal instruction", 0, i);
 				}
 				break;
 			case 0x0002:
 				switch(ibuf[i + 1]) {
 					case 0x0001:
-						dec(&reg, 'A', &flags);
+						dec(&reg, ibuf[i + 1], &flags);
 						break;
 					case 0x0002:
-						dec(&reg, 'B', &flags);
+						dec(&reg, ibuf[i + 1], &flags);
 						break;
 					case 0x0003:
-						dec(&reg, 'C', &flags);
+						dec(&reg, ibuf[i + 1], &flags);
 						break;
 					case 0x0004:
-						dec(&reg, 'D', &flags);
+						dec(&reg, ibuf[i + 1], &flags);
 						break;
 					case 0x0005:
-						dec(&reg, '5', &flags);
+						dec(&reg, ibuf[i + 1], &flags);
 						break;
 					case 0x0006:
-						dec(&reg, '6', &flags);
+						dec(&reg, ibuf[i + 1], &flags);
 						break;
 					case 0x0007:
-						dec(&reg, '7', &flags);
+						dec(&reg, ibuf[i + 1], &flags);
 						break;
 					case 0x0008:
-						dec(&reg, '8', &flags);
+						dec(&reg, ibuf[i + 1], &flags);
 						break;
+					default:
+						hacf("illegal instruction", 0, i);
 				}
 				break;
+			case 0x0003:
+				switch(ibuf[i + 2]) {
+					case 0x0000:
+						add(i, ibuf, &flags, &reg, 0);
+						break;
+					case 0x0001:
+						add(i, ibuf, &flags, &reg, 1);
+						break;
+					default:	
+						hacf("illegal instruction", 0, i);
+
+				}
+			default:
+				hacf("illegal instruction", 0, i);
 		}	
 	}
 }
