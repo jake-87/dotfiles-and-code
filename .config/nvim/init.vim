@@ -5,10 +5,10 @@ Plug  'dense-analysis/ale'
 Plug  'arakashic/chromatica.nvim'
 Plug  'frazrepo/vim-rainbow'
 Plug  'jiangmiao/auto-pairs', { 'for' : ['c','f90']}
-Plug 'ajmwagar/vim-deus'
 Plug 'preservim/nerdtree'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'rktjmp/lush.nvim'
 call plug#end()
 let g:ale_linters = {
     \ 'python': ['pylint'],
@@ -28,12 +28,11 @@ let g:neoformat_enabled_cpp = ['clangformat']
 let g:neoformat_enabled_c = ['clangformat']
 let g:rainbow_active = 1
 let g:rainbow_ctermfgs = ['green', 'yellow', 'red', 'darkblue']
-inoremap <A> <ESC> 
-colorscheme deus
 set tabstop=4
 set softtabstop=0 noexpandtab
 set shiftwidth=4
 syntax on
 nmap W :noh<CR>
+set background=dark
 autocmd BufEnter *.asm setfiletype nasm
 let g:airline_theme='deus'

@@ -1,14 +1,16 @@
 #!/usr/local/bin/bash
 cd ~/git-dotfiles
-rm -rf ~/git-dotfiles/bin ~/git-dotfiles/small-projects ~/git-dotfiles/prime-list ~/git-dotfiles/.config ~/git-dotfiles/sysconfig ~/git-dotfiles/.zshrc
-mkdir -p ~/git-dotfiles/sysconfig/etc
-cp -r ~/.config ~/git-dotfiles/.config
-cp -r /etc/ ~/git-dotfiles/sysconfig/etc
-cp ~/.zshrc ~/git-dotfiles/zshrc
-cp -r ~/bin ~/git-dotfiles/bin
-cp -r ~/Documents/small-projects ~/git-dotfiles/small-projects
-doas cp /boot/loader.conf ~/git-dotfiles/sysconfig/loader.conf
+rm -vrf ~/git-dotfiles/suckless ~/git-dotfiles/bin ~/git-dotfiles/small-projects ~/git-dotfiles/prime-list ~/git-dotfiles/.config ~/git-dotfiles/sysconfig ~/git-dotfiles/.zshrc
+mkdir -vp ~/git-dotfiles/sysconfig/etc
+cp -vr ~/Documents/suckless ~/git-dotfiles/suckless
+rm -vrf ~/git-dotfiles/suckless/{dwm,dmenu,st}/.git
+cp -vr ~/.config ~/git-dotfiles/.config
+cp -vr /etc/ ~/git-dotfiles/sysconfig/etc
+cp -v ~/.zshrc ~/git-dotfiles/zshrc
+cp -vr ~/bin ~/git-dotfiles/bin
+cp -vr ~/Documents/small-projects ~/git-dotfiles/small-projects
+doas cp -v /boot/loader.conf ~/git-dotfiles/sysconfig/loader.conf
 pkg prime-list > ~/git-dotfiles/tmp
 tr '\n' ' ' < tmp > prime-list 
-rm ~/git-dotfiles/tmp
+rm -v ~/git-dotfiles/tmp
 echo "now cd ~/git-dotfiles, git commit and git push"
