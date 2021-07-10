@@ -1,0 +1,2 @@
+#!/bin/sh
+printf "#include <stdio.h>\n#include <stdint.h>\n#include <stdlib.h>\nint main() {\n\n}" > /tmp/test.c

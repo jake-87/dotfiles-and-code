@@ -46,11 +46,11 @@ dw name (16 bit signed value) -- allocate a 16 bit signed value
 Key for hex codes:
 
 Format :
-command -- hex -- function proto
-inc -- 0x0001 -- inc(int16_t ** reg, char r, uint16_t ** flags); 
-dec -- 0x0002 -- dec(int16_t ** reg, char r, uint16_t ** flags)
-add -- 0x0003 -- add(int i, unsigned int * ibuf, uint16_t ** flags, int16_t ** reg, int m);
-sub -- 0x0004
+command -- hex
+inc -- 0x0001 
+dec -- 0x0002 
+add -- 0x0003 
+sub -- 0x0004 
 mov -- 0x0005
 and -- 0x0006
 or -- 0x0007

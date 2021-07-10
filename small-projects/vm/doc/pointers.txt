@@ -1,0 +1,7 @@
+Pointers are hard, so atm only registers support them.
+Regtype tracks what kind of pointer a register value is.
+0 - Not a pointer
+1 - Pointer to uint
+2 - Pointer to int
+3 - Pointer to float
+4 - Pointer to char array 

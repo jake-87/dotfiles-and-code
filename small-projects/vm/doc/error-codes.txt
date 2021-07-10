@@ -1,0 +1,5 @@
+1 - Invalid operation
+2 - Invalid register
+3 - Invalid operand
+4 - Invalid type
+5 - Memory not initialised

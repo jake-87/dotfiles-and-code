@@ -1,0 +1,8 @@
+0 - Int to reg
+1 - Reg to reg
+2 - Mem to reg
+3 - Mem adr to reg
+4 - Int to mem
+5 - Reg to mem
+6 - Mem to mem
+7 - Mem adr to mem

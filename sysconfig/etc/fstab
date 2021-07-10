@@ -2,3 +2,5 @@
 /dev/ada1s1a	/		ufs	rw	1	1
 /dev/ada1s1d	/usr		ufs	rw	2	2
 /dev/ada1s1b	none		swap	sw	0	0
+fdesc		/dev/fd		fdescfs	rw	0	0
+proc		/proc		procfs	rw	0	0
