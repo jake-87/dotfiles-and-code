@@ -9,6 +9,7 @@ Plug 'preservim/nerdtree'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'ParamagicDev/vim-medic_chalk'
+Plug 'ap/vim-css-color'
 call plug#end()
 let g:ale_linters = {
     \ 'python': ['pylint'],
