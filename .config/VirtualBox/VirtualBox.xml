@@ -11,15 +11,16 @@
       <ExtraDataItem name="GUI/Details/Elements" value="general,system,preview,display,storage,audio,network,usb,sharedFolders,description"/>
       <ExtraDataItem name="GUI/GroupDefinitions/" value="n=GLOBAL,m=3c5d0541-a790-4952-8017-71f89e3b0d74,m=9f2c6417-7d83-4905-b853-a912abdc8992"/>
       <ExtraDataItem name="GUI/HostNetworkManager/Details/Expanded" value="true"/>
+      <ExtraDataItem name="GUI/Input/AutoCapture" value="false"/>
       <ExtraDataItem name="GUI/LastItemSelected" value="m=NetBSD"/>
-      <ExtraDataItem name="GUI/LastWindowPosition" value="40,56,1520,804,max"/>
-      <ExtraDataItem name="GUI/RecentFolderCD" value="/usr/home/freebsd/Documents/vbox/isos"/>
-      <ExtraDataItem name="GUI/RecentListCD" value="/usr/home/freebsd/Documents/vbox/isos/alpine-standard-3.14.0-x86_64.iso,/usr/home/freebsd/Documents/vbox/isos/debian-10.10.0-amd64-netinst.iso,/usr/home/freebsd/Documents/vbox/isos/void-live-x86_64-20210218.iso,/usr/home/freebsd/Documents/vbox/isos/NetBSD-9.2-amd64.iso,--"/>
+      <ExtraDataItem name="GUI/LastWindowPosition" value="10,29,1578,859,max"/>
+      <ExtraDataItem name="GUI/RecentFolderCD" value="/usr/home/freebsd/Documents/games/tmnf/TrackMania Nations Forever"/>
+      <ExtraDataItem name="GUI/RecentListCD" value="--,/usr/home/freebsd/Documents/vbox/isos/alpine-standard-3.14.0-x86_64.iso,/usr/home/freebsd/Documents/vbox/isos/debian-10.10.0-amd64-netinst.iso,/usr/home/freebsd/Documents/vbox/isos/void-live-x86_64-20210218.iso,/usr/home/freebsd/Documents/vbox/isos/NetBSD-9.2-amd64.iso"/>
       <ExtraDataItem name="GUI/SoftKeyboardColorTheme" value="Custom,#ff878787,#ff000000,#ff676767,#ff9b6767,#fffafafa"/>
       <ExtraDataItem name="GUI/SoftKeyboardDialogGeometry" value="1068,56,492,804,max"/>
       <ExtraDataItem name="GUI/SoftKeyboardSelectedColorTheme" value="Custom"/>
       <ExtraDataItem name="GUI/SoftKeyboardSelectedLayout" value="{25867c1e-0455-4303-bf76-1c3ae4cca042}"/>
-      <ExtraDataItem name="GUI/SplitterSizes" value="505,1014"/>
+      <ExtraDataItem name="GUI/SplitterSizes" value="524,1053"/>
       <ExtraDataItem name="GUI/Statusbar" value="false"/>
       <ExtraDataItem name="GUI/SuppressMessages" value="confirmInputCapture,remindAboutMouseIntegration,remindAboutAutoCapture,confirmGoingScale"/>
       <ExtraDataItem name="GUI/Toolbar" value="false"/>
@@ -31,6 +32,7 @@
     <MachineRegistry>
       <MachineEntry uuid="{3c5d0541-a790-4952-8017-71f89e3b0d74}" src="/home/freebsd/Documents/vbox/NetBSD/NetBSD.vbox"/>
       <MachineEntry uuid="{9f2c6417-7d83-4905-b853-a912abdc8992}" src="/home/freebsd/Documents/vbox/bedrock linux/bedrock linux.vbox"/>
+      <MachineEntry uuid="{3dd64dbe-b53d-4cea-a7e4-a3d0986804cb}" src="/home/freebsd/Documents/vbox/AmogOS/AmogOS.vbox"/>
     </MachineRegistry>
     <NetserviceRegistry>
       <DHCPServers>

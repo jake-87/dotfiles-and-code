@@ -1,0 +1,9 @@
+Mono path[0] = '/usr/home/freebsd/Documents/games/HollowKnight/game/Hollow Knight_Data/Managed'
+Mono config path = '/usr/home/freebsd/Documents/games/HollowKnight/game/Hollow Knight_Data/MonoBleedingEdge/etc'
+Caught fatal signal - signo:6 code:-6 errno:0 addr:0x3e90000b497
+Obtained 5 stack frames.
+#0  0x007ffffffff514 in (Unknown)
+#1  0x00000803481329 in (Unknown)
+#2  0x007fffffffdc10 in (Unknown)
+#3  0x000008034488d1 in (Unknown)
+#4  0x00000800228000 in (Unknown)

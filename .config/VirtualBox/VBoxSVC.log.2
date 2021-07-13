@@ -1,85 +1,45 @@
-00:00:00.000464 main     VirtualBox XPCOM Server 6.1.18 r142142 freebsd.amd64 (Jun 15 2021 08:31:04) release log
-00:00:00.000474 main     Log opened 2021-07-02T03:10:25.815941000Z
-00:00:00.000475 main     Build Type: release
-00:00:00.000487 main     OS Product: FreeBSD
-00:00:00.000492 main     OS Release: 13.0-RELEASE
-00:00:00.000496 main     OS Version: FreeBSD 13.0-RELEASE #0 releng/13.0-n244733-ea31abc261f: Fri Apr  9 04:24:09 UTC 2021     root@releng1.nyi.freebsd.org:/usr/obj/usr/src/amd64.amd64/sys/GENERIC
-00:00:00.000500 main     Firmware type: failed - VERR_NOT_SUPPORTED
-00:00:00.000524 main     Host RAM: 3843MB (3.7GB) total, 2469MB (2.4GB) available
-00:00:00.000530 main     Executable: /usr/local/lib/virtualbox/VBoxSVC
-00:00:00.000531 main     Process ID: 58309
+00:00:00.000466 main     VirtualBox XPCOM Server 6.1.22 r144080 freebsd.amd64 (Jul  4 2021 15:58:50) release log
+00:00:00.000476 main     Log opened 2021-07-12T00:29:08.177060000Z
+00:00:00.000477 main     Build Type: release
+00:00:00.000490 main     OS Product: FreeBSD
+00:00:00.000494 main     OS Release: 13.0-RELEASE
+00:00:00.000498 main     OS Version: FreeBSD 13.0-RELEASE #0 releng/13.0-n244733-ea31abc261f: Fri Apr  9 04:24:09 UTC 2021     root@releng1.nyi.freebsd.org:/usr/obj/usr/src/amd64.amd64/sys/GENERIC
+00:00:00.000502 main     Firmware type: failed - VERR_NOT_SUPPORTED
+00:00:00.000525 main     Host RAM: 3843MB (3.7GB) total, 3316MB (3.2GB) available
+00:00:00.000531 main     Executable: /usr/local/lib/virtualbox/VBoxSVC
+00:00:00.000532 main     Process ID: 85265
 00:00:00.000532 main     Package type: BSD_64BITS_GENERIC (OSE)
-00:00:00.002394 main     IPC socket path: /tmp/.vbox-freebsd-ipc/ipcd
-00:00:00.112225 nspr-2   VirtualBox: object creation starts
-00:00:00.112389 nspr-2   Home directory: '/home/freebsd/.config/VirtualBox'
-00:00:00.116463 nspr-2   Loading settings file "/home/freebsd/.config/VirtualBox/VirtualBox.xml" with version "1.12-freebsd"
-00:00:01.136214 nspr-2   HostDnsMonitor: initializing
-00:00:01.136320 nspr-2   NAT: resolv.conf: nameserver 192.168.0.1
-00:00:01.136381 nspr-2   HostDnsMonitor: updating information
-00:00:01.136398 nspr-2   HostDnsMonitor: old information
-00:00:01.136401 nspr-2     no server entries
-00:00:01.136404 nspr-2     no domain set
-00:00:01.136407 nspr-2     no search string entries
-00:00:01.136411 nspr-2   HostDnsMonitor: new information
-00:00:01.136414 nspr-2     server 1: 192.168.0.1
-00:00:01.136419 nspr-2     domain: home
-00:00:01.136422 nspr-2     search string 1: home
-00:00:01.138106 nspr-2   HostPowerServiceLinux: DBus connection Error (Failed to connect to socket /var/run/dbus/system_bus_socket: No such file or directory)
-00:00:01.235022 nspr-2   failed to create vboxnet0, error (0x80004005)
-00:00:01.235590 nspr-2   VD: VDInit finished with VINF_SUCCESS
-00:00:01.235689 nspr-2   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={027bc463-929c-40e8-bf16-fea557cd8e7e} aComponent={SystemPropertiesWrap} aText={Cannot determine default Guest Additions ISO location. Most likely they are not available}, preserve=false aResultDetail=0
-00:00:01.327487 nspr-2   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={85632c68-b5bb-4316-a900-5eb28d3413df} aComponent={MachineWrap} aText={Runtime error opening '/home/freebsd/vbox/haiku/haiku.vbox' for reading: -102 (File not found.).
-00:00:01.327497 nspr-2   /wrkdirs/usr/ports/emulators/virtualbox-ose/work/VirtualBox-6.1.18/src/VBox/Main/src-server/MachineImpl.cpp[754] (nsresult Machine::i_registeredInit())}, preserve=false aResultDetail=0
-00:00:01.327959 nspr-2   VirtualBox: object created
-00:00:07.593755 nspr-3   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={85632c68-b5bb-4316-a900-5eb28d3413df} aComponent={MachineWrap} aText={Runtime error opening '/home/freebsd/vbox/haiku/haiku.vbox' for reading: -102 (File not found.).
-00:00:07.593765 nspr-3   /wrkdirs/usr/ports/emulators/virtualbox-ose/work/VirtualBox-6.1.18/src/VBox/Main/src-server/MachineImpl.cpp[754] (nsresult Machine::i_registeredInit())}, preserve=false aResultDetail=0
-00:00:07.594162 nspr-3   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={85632c68-b5bb-4316-a900-5eb28d3413df} aComponent={MachineWrap} aText={Runtime error opening '/home/freebsd/vbox/haiku/haiku.vbox' for reading: -102 (File not found.).
-00:00:07.594166 nspr-3   /wrkdirs/usr/ports/emulators/virtualbox-ose/work/VirtualBox-6.1.18/src/VBox/Main/src-server/MachineImpl.cpp[754] (nsresult Machine::i_registeredInit())}, preserve=false aResultDetail=0
-00:00:07.625650 nspr-3   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={85632c68-b5bb-4316-a900-5eb28d3413df} aComponent={MachineWrap} aText={Runtime error opening '/home/freebsd/vbox/haiku/haiku.vbox' for reading: -102 (File not found.).
-00:00:07.625660 nspr-3   /wrkdirs/usr/ports/emulators/virtualbox-ose/work/VirtualBox-6.1.18/src/VBox/Main/src-server/MachineImpl.cpp[754] (nsresult Machine::i_registeredInit())}, preserve=false aResultDetail=0
-00:00:07.766568 nspr-3   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={85632c68-b5bb-4316-a900-5eb28d3413df} aComponent={MachineWrap} aText={The object functionality is limited}, preserve=false aResultDetail=0
-00:00:07.766611 nspr-3   ERROR [COM]: aRC=VBOX_E_OBJECT_NOT_FOUND (0x80bb0001) aIID={d0a0163f-e254-4e5b-a1f2-011cf991c38d} aComponent={VirtualBoxWrap} aText={Could not find a registered machine named 'haiku'}, preserve=false aResultDetail=0
-00:00:12.037689 nspr-2   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={85632c68-b5bb-4316-a900-5eb28d3413df} aComponent={MachineWrap} aText={The object functionality is limited}, preserve=false aResultDetail=0
-00:00:12.058492 nspr-2   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={85632c68-b5bb-4316-a900-5eb28d3413df} aComponent={MachineWrap} aText={Runtime error opening '/home/freebsd/vbox/haiku/haiku.vbox' for reading: -102 (File not found.).
-00:00:12.058504 nspr-2   /wrkdirs/usr/ports/emulators/virtualbox-ose/work/VirtualBox-6.1.18/src/VBox/Main/src-server/MachineImpl.cpp[754] (nsresult Machine::i_registeredInit())}, preserve=false aResultDetail=0
-00:00:12.103269 nspr-2   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={85632c68-b5bb-4316-a900-5eb28d3413df} aComponent={MachineWrap} aText={Runtime error opening '/home/freebsd/vbox/haiku/haiku.vbox' for reading: -102 (File not found.).
-00:00:12.103279 nspr-2   /wrkdirs/usr/ports/emulators/virtualbox-ose/work/VirtualBox-6.1.18/src/VBox/Main/src-server/MachineImpl.cpp[754] (nsresult Machine::i_registeredInit())}, preserve=false aResultDetail=0
-00:00:12.308043 nspr-2   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={85632c68-b5bb-4316-a900-5eb28d3413df} aComponent={MachineWrap} aText={Runtime error opening '/home/freebsd/vbox/haiku/haiku.vbox' for reading: -102 (File not found.).
-00:00:12.308053 nspr-2   /wrkdirs/usr/ports/emulators/virtualbox-ose/work/VirtualBox-6.1.18/src/VBox/Main/src-server/MachineImpl.cpp[754] (nsresult Machine::i_registeredInit())}, preserve=false aResultDetail=0
-00:00:12.308261 nspr-2   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={85632c68-b5bb-4316-a900-5eb28d3413df} aComponent={MachineWrap} aText={The object functionality is limited}, preserve=false aResultDetail=0
-00:00:12.309193 nspr-2   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={85632c68-b5bb-4316-a900-5eb28d3413df} aComponent={MachineWrap} aText={The object functionality is limited}, preserve=false aResultDetail=0
-00:00:12.310982 nspr-2   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={85632c68-b5bb-4316-a900-5eb28d3413df} aComponent={MachineWrap} aText={The object functionality is limited}, preserve=false aResultDetail=0
-00:00:12.311890 nspr-2   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={85632c68-b5bb-4316-a900-5eb28d3413df} aComponent={MachineWrap} aText={The object functionality is limited}, preserve=false aResultDetail=0
-00:00:12.315275 nspr-2   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={85632c68-b5bb-4316-a900-5eb28d3413df} aComponent={MachineWrap} aText={Runtime error opening '/home/freebsd/vbox/haiku/haiku.vbox' for reading: -102 (File not found.).
-00:00:12.315282 nspr-2   /wrkdirs/usr/ports/emulators/virtualbox-ose/work/VirtualBox-6.1.18/src/VBox/Main/src-server/MachineImpl.cpp[754] (nsresult Machine::i_registeredInit())}, preserve=false aResultDetail=0
-00:00:12.317291 nspr-2   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={85632c68-b5bb-4316-a900-5eb28d3413df} aComponent={MachineWrap} aText={Runtime error opening '/home/freebsd/vbox/haiku/haiku.vbox' for reading: -102 (File not found.).
-00:00:12.317296 nspr-2   /wrkdirs/usr/ports/emulators/virtualbox-ose/work/VirtualBox-6.1.18/src/VBox/Main/src-server/MachineImpl.cpp[754] (nsresult Machine::i_registeredInit())}, preserve=false aResultDetail=0
-00:00:12.319541 nspr-2   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={85632c68-b5bb-4316-a900-5eb28d3413df} aComponent={MachineWrap} aText={Runtime error opening '/home/freebsd/vbox/haiku/haiku.vbox' for reading: -102 (File not found.).
-00:00:12.319549 nspr-2   /wrkdirs/usr/ports/emulators/virtualbox-ose/work/VirtualBox-6.1.18/src/VBox/Main/src-server/MachineImpl.cpp[754] (nsresult Machine::i_registeredInit())}, preserve=false aResultDetail=0
-00:00:12.321609 nspr-2   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={85632c68-b5bb-4316-a900-5eb28d3413df} aComponent={MachineWrap} aText={Runtime error opening '/home/freebsd/vbox/haiku/haiku.vbox' for reading: -102 (File not found.).
-00:00:12.321616 nspr-2   /wrkdirs/usr/ports/emulators/virtualbox-ose/work/VirtualBox-6.1.18/src/VBox/Main/src-server/MachineImpl.cpp[754] (nsresult Machine::i_registeredInit())}, preserve=false aResultDetail=0
-00:00:12.326119 nspr-2   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={85632c68-b5bb-4316-a900-5eb28d3413df} aComponent={MachineWrap} aText={Runtime error opening '/home/freebsd/vbox/haiku/haiku.vbox' for reading: -102 (File not found.).
-00:00:12.326127 nspr-2   /wrkdirs/usr/ports/emulators/virtualbox-ose/work/VirtualBox-6.1.18/src/VBox/Main/src-server/MachineImpl.cpp[754] (nsresult Machine::i_registeredInit())}, preserve=false aResultDetail=0
-00:00:12.329379 nspr-2   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={85632c68-b5bb-4316-a900-5eb28d3413df} aComponent={MachineWrap} aText={Runtime error opening '/home/freebsd/vbox/haiku/haiku.vbox' for reading: -102 (File not found.).
-00:00:12.329387 nspr-2   /wrkdirs/usr/ports/emulators/virtualbox-ose/work/VirtualBox-6.1.18/src/VBox/Main/src-server/MachineImpl.cpp[754] (nsresult Machine::i_registeredInit())}, preserve=false aResultDetail=0
-00:00:15.687945 nspr-2   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={85632c68-b5bb-4316-a900-5eb28d3413df} aComponent={MachineWrap} aText={Runtime error opening '/home/freebsd/vbox/haiku/haiku.vbox' for reading: -102 (File not found.).
-00:00:15.687955 nspr-2   /wrkdirs/usr/ports/emulators/virtualbox-ose/work/VirtualBox-6.1.18/src/VBox/Main/src-server/MachineImpl.cpp[754] (nsresult Machine::i_registeredInit())}, preserve=false aResultDetail=0
-00:00:17.434139 nspr-2   Saving settings file "/home/freebsd/.config/VirtualBox/VirtualBox.xml" with version "1.12-freebsd"
-00:08:03.039997 nspr-2   Saving settings file "/home/freebsd/.config/VirtualBox/VirtualBox.xml" with version "1.12-freebsd"
-00:08:20.696092 createBase Saving settings file "/home/freebsd/.config/VirtualBox/VirtualBox.xml" with version "1.12-freebsd"
-00:08:21.481141 nspr-4   Saving settings file "/home/freebsd/Documents/vbox/NetBSD/NetBSD.vbox" with version "1.15-freebsd"
-00:08:21.605520 nspr-2   Saving settings file "/home/freebsd/Documents/vbox/NetBSD/NetBSD.vbox" with version "1.15-freebsd"
-00:08:21.611446 nspr-2   Saving settings file "/home/freebsd/.config/VirtualBox/VirtualBox.xml" with version "1.12-freebsd"
-00:08:21.724468 nspr-2   Saving settings file "/home/freebsd/.config/VirtualBox/VirtualBox.xml" with version "1.12-freebsd"
-00:08:21.733104 nspr-2   Saving settings file "/home/freebsd/Documents/vbox/NetBSD/NetBSD.vbox" with version "1.15-freebsd"
-00:08:23.909464 nspr-3   ERROR [COM]: aRC=VBOX_E_IPRT_ERROR (0x80bb0005) aIID={85632c68-b5bb-4316-a900-5eb28d3413df} aComponent={MachineWrap} aText={Could not launch the VM process for the machine 'NetBSD' (VERR_ACCESS_DENIED)}, preserve=false aResultDetail=-38
-00:09:24.247244 nspr-2   Saving settings file "/home/freebsd/.config/VirtualBox/VirtualBox.xml" with version "1.12-freebsd"
-00:09:24.257104 nspr-2   Saving settings file "/home/freebsd/.config/VirtualBox/VirtualBox.xml" with version "1.12-freebsd"
-00:09:24.266576 nspr-2   Saving settings file "/home/freebsd/.config/VirtualBox/VirtualBox.xml" with version "1.12-freebsd"
-00:09:29.811236 main     VirtualBox: object deletion starts
-00:09:29.811321 main     ERROR [COM]: aRC=VBOX_E_OBJECT_IN_USE (0x80bb000c) aIID={ad47ad09-787b-44ab-b343-a082a3f2dfb1} aComponent={MediumWrap} aText={Medium '/home/freebsd/Documents/vbox/NetBSD/NetBSD.vdi' cannot be closed because it is still attached to 1 virtual machines}, preserve=false aResultDetail=0
-00:09:29.811992 main     HostDnsMonitor: shutting down ...
-00:09:29.812020 main     HostDnsMonitor: shut down
-00:09:29.812054 main     {0000000802e70640} HostPowerServiceLinux::~HostPowerServiceLinux: RTThreadWait() for 5000 ms failed with VERR_INVALID_HANDLE
-00:09:29.907132 Watcher  ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={d0a0163f-e254-4e5b-a1f2-011cf991c38d} aComponent={VirtualBoxWrap} aText={The object is not ready}, preserve=false aResultDetail=0
-00:09:29.920749 main     VirtualBox: object deleted
+00:00:00.002386 main     IPC socket path: /tmp/.vbox-freebsd-ipc/ipcd
+00:00:00.111402 nspr-2   VirtualBox: object creation starts
+00:00:00.111504 nspr-2   Home directory: '/home/freebsd/.config/VirtualBox'
+00:00:00.131716 nspr-2   Loading settings file "/home/freebsd/.config/VirtualBox/VirtualBox.xml" with version "1.12-freebsd"
+00:00:01.217873 nspr-2   HostDnsMonitor: initializing
+00:00:01.217951 nspr-2   NAT: resolv.conf: nameserver 192.168.0.1
+00:00:01.218001 nspr-2   HostDnsMonitor: updating information
+00:00:01.218016 nspr-2   HostDnsMonitor: old information
+00:00:01.218020 nspr-2     no server entries
+00:00:01.218022 nspr-2     no domain set
+00:00:01.218024 nspr-2     no search string entries
+00:00:01.218026 nspr-2   HostDnsMonitor: new information
+00:00:01.218028 nspr-2     server 1: 192.168.0.1
+00:00:01.218031 nspr-2     domain: home
+00:00:01.218033 nspr-2     search string 1: home
+00:00:01.219413 nspr-2   HostPowerServiceLinux: DBus connection Error (Failed to connect to socket /var/run/dbus/system_bus_socket: No such file or directory)
+00:00:01.342107 nspr-2   VD: VDInit finished with VINF_SUCCESS
+00:00:01.342254 nspr-2   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={027bc463-929c-40e8-bf16-fea557cd8e7e} aComponent={SystemPropertiesWrap} aText={Cannot determine default Guest Additions ISO location. Most likely they are not available}, preserve=false aResultDetail=0
+00:00:01.467428 nspr-2   Loading settings file "/home/freebsd/Documents/vbox/NetBSD/NetBSD.vbox" with version "1.15-freebsd"
+00:00:01.586085 nspr-2   Loading settings file "/home/freebsd/Documents/vbox/bedrock linux/bedrock linux.vbox" with version "1.16-freebsd"
+00:00:01.586602 nspr-2   VirtualBox: object created
+00:00:22.534262 nspr-4   Launched VM: 44045152 pid: 12902 (0x3266) frontend: GUI/Qt name: NetBSD
+00:00:23.884876 nspr-6   ERROR [COM]: aRC=VBOX_E_OBJECT_NOT_FOUND (0x80bb0001) aIID={70401eef-c8e9-466b-9660-45cb3e9979e4} aComponent={ExtPackManagerWrap} aText={No extension pack by the name 'Oracle VM VirtualBox Extension Pack' was found}, preserve=false aResultDetail=0
+00:00:24.132841 nspr-5   ERROR [COM]: aRC=VBOX_E_IPRT_ERROR (0x80bb0005) aIID={85632c68-b5bb-4316-a900-5eb28d3413df} aComponent={SessionMachine} aText={Saved screenshot data is not available (VERR_NOT_SUPPORTED)}, preserve=false aResultDetail=-37
+00:04:45.013020 main     Saving settings file "/home/freebsd/Documents/vbox/NetBSD/NetBSD.vbox" with version "1.15-freebsd"
+00:04:45.506124 Watcher  Reaper: Pid 12902 (3266) exited normally: 1 (0x1)
+00:04:50.046545 main     VirtualBox: object deletion starts
+00:04:50.046594 main     ERROR [COM]: aRC=VBOX_E_OBJECT_IN_USE (0x80bb000c) aIID={ad47ad09-787b-44ab-b343-a082a3f2dfb1} aComponent={MediumWrap} aText={Medium '/home/freebsd/Documents/vbox/NetBSD/NetBSD.vdi' cannot be closed because it is still attached to 1 virtual machines}, preserve=false aResultDetail=0
+00:04:50.046817 main     ERROR [COM]: aRC=VBOX_E_OBJECT_IN_USE (0x80bb000c) aIID={ad47ad09-787b-44ab-b343-a082a3f2dfb1} aComponent={MediumWrap} aText={Medium '/home/freebsd/Documents/vbox/bedrock linux/bedrock linux.vdi' cannot be closed because it is still attached to 1 virtual machines}, preserve=false aResultDetail=0
+00:04:50.047205 main     HostDnsMonitor: shutting down ...
+00:04:50.047238 main     HostDnsMonitor: shut down
+00:04:50.047269 main     {0000000802e70680} HostPowerServiceLinux::~HostPowerServiceLinux: RTThreadWait() for 5000 ms failed with VERR_INVALID_HANDLE
+00:04:50.047776 Watcher  ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={d0a0163f-e254-4e5b-a1f2-011cf991c38d} aComponent={VirtualBoxWrap} aText={The object is not ready}, preserve=false aResultDetail=0
+00:04:50.047875 main     VirtualBox: object deleted

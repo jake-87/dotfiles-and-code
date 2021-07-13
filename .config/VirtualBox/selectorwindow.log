@@ -1,1 +1,17 @@
-08:44:51.212586 Log continuation - Log started 2021-07-02T03:21:36.130038000Z
+00:00:05.520589 VirtualBox GUI VM Selector Window 6.1.22 r144080 freebsd.amd64 (Jul  4 2021 15:58:50) release log
+00:00:05.520597 Log opened 2021-07-13T09:40:51.212487000Z
+00:00:05.520598 Build Type: release
+00:00:05.520614 OS Product: FreeBSD
+00:00:05.520618 OS Release: 13.0-RELEASE
+00:00:05.520622 OS Version: FreeBSD 13.0-RELEASE #0 releng/13.0-n244733-ea31abc261f: Fri Apr  9 04:24:09 UTC 2021     root@releng1.nyi.freebsd.org:/usr/obj/usr/src/amd64.amd64/sys/GENERIC
+00:00:05.520626 Firmware type: failed - VERR_NOT_SUPPORTED
+00:00:05.520650 Host RAM: 3843MB (3.7GB) total, 2116MB (2.0GB) available
+00:00:05.520655 Executable: /usr/local/lib/virtualbox/VirtualBox
+00:00:05.520656 Process ID: 30610
+00:00:05.520656 Package type: BSD_64BITS_GENERIC (OSE)
+00:00:05.520713 Qt version: 5.15.2
+00:00:06.037946 GUI: UIMediumEnumerator: Medium-enumeration started...
+00:00:12.605136 GUI: UIDesktopWidgetWatchdog::sltHandleHostScreenAvailableGeometryCalculated: Screen 0 work area is actually resized to: 889x28 x 698x859
+00:00:12.624836 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:00:47.456179 GUI: UIMediumEnumerator: Medium with key={{4a04b9d3-06ef-4caa-a87c-56ee4a26cadf}} created
+00:00:47.723405 GUI: UIMediumEnumerator: Medium-enumeration finished!

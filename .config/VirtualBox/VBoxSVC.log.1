@@ -1,42 +1,46 @@
-00:00:00.000458 main     VirtualBox XPCOM Server 6.1.18 r142142 freebsd.amd64 (Jun 15 2021 08:31:04) release log
-00:00:00.000467 main     Log opened 2021-07-02T03:20:48.089874000Z
-00:00:00.000468 main     Build Type: release
-00:00:00.000480 main     OS Product: FreeBSD
-00:00:00.000484 main     OS Release: 13.0-RELEASE
-00:00:00.000489 main     OS Version: FreeBSD 13.0-RELEASE #0 releng/13.0-n244733-ea31abc261f: Fri Apr  9 04:24:09 UTC 2021     root@releng1.nyi.freebsd.org:/usr/obj/usr/src/amd64.amd64/sys/GENERIC
-00:00:00.000492 main     Firmware type: failed - VERR_NOT_SUPPORTED
-00:00:00.000515 main     Host RAM: 3843MB (3.7GB) total, 1834MB available
-00:00:00.000521 main     Executable: /usr/local/lib/virtualbox/VBoxSVC
-00:00:00.000521 main     Process ID: 94869
-00:00:00.000522 main     Package type: BSD_64BITS_GENERIC (OSE)
-00:00:00.002422 main     IPC socket path: /tmp/.vbox-freebsd-ipc/ipcd
-00:00:00.110997 nspr-2   VirtualBox: object creation starts
-00:00:00.111157 nspr-2   Home directory: '/home/freebsd/.config/VirtualBox'
-00:00:00.111595 nspr-2   Loading settings file "/home/freebsd/.config/VirtualBox/VirtualBox.xml" with version "1.12-freebsd"
-00:00:01.129261 nspr-2   HostDnsMonitor: initializing
-00:00:01.129364 nspr-2   NAT: resolv.conf: nameserver 192.168.0.1
-00:00:01.129422 nspr-2   HostDnsMonitor: updating information
-00:00:01.129438 nspr-2   HostDnsMonitor: old information
-00:00:01.129441 nspr-2     no server entries
-00:00:01.129444 nspr-2     no domain set
-00:00:01.129446 nspr-2     no search string entries
-00:00:01.129448 nspr-2   HostDnsMonitor: new information
-00:00:01.129450 nspr-2     server 1: 192.168.0.1
-00:00:01.129453 nspr-2     domain: home
-00:00:01.129455 nspr-2     search string 1: home
-00:00:01.130905 nspr-2   HostPowerServiceLinux: DBus connection Error (Failed to connect to socket /var/run/dbus/system_bus_socket: No such file or directory)
-00:00:01.132484 nspr-2   failed to create vboxnet0, error (0x80004005)
-00:00:01.220019 nspr-2   VD: VDInit finished with VINF_SUCCESS
-00:00:01.220138 nspr-2   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={027bc463-929c-40e8-bf16-fea557cd8e7e} aComponent={SystemPropertiesWrap} aText={Cannot determine default Guest Additions ISO location. Most likely they are not available}, preserve=false aResultDetail=0
-00:00:01.220574 nspr-2   Loading settings file "/home/freebsd/Documents/vbox/NetBSD/NetBSD.vbox" with version "1.15-freebsd"
-00:00:01.221212 nspr-2   VirtualBox: object created
-00:00:04.526369 nspr-2   ERROR [COM]: aRC=VBOX_E_IPRT_ERROR (0x80bb0005) aIID={85632c68-b5bb-4316-a900-5eb28d3413df} aComponent={MachineWrap} aText={Could not launch the VM process for the machine 'NetBSD' (VERR_ACCESS_DENIED)}, preserve=false aResultDetail=-38
-00:00:19.289106 nspr-3   Saving settings file "/home/freebsd/.config/VirtualBox/VirtualBox.xml" with version "1.12-freebsd"
-00:00:19.298539 nspr-3   Saving settings file "/home/freebsd/.config/VirtualBox/VirtualBox.xml" with version "1.12-freebsd"
-00:00:24.947709 main     VirtualBox: object deletion starts
-00:00:24.947758 main     ERROR [COM]: aRC=VBOX_E_OBJECT_IN_USE (0x80bb000c) aIID={ad47ad09-787b-44ab-b343-a082a3f2dfb1} aComponent={MediumWrap} aText={Medium '/home/freebsd/Documents/vbox/NetBSD/NetBSD.vdi' cannot be closed because it is still attached to 1 virtual machines}, preserve=false aResultDetail=0
-00:00:24.948410 main     HostDnsMonitor: shutting down ...
-00:00:24.948419 main     HostDnsMonitor: shut down
-00:00:24.948447 main     {0000000802e70640} HostPowerServiceLinux::~HostPowerServiceLinux: RTThreadWait() for 5000 ms failed with VERR_INVALID_HANDLE
-00:00:24.948753 Watcher  ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={d0a0163f-e254-4e5b-a1f2-011cf991c38d} aComponent={VirtualBoxWrap} aText={The object is not ready}, preserve=false aResultDetail=0
-00:00:24.948888 main     VirtualBox: object deleted
+00:00:00.000448 main     VirtualBox XPCOM Server 6.1.22 r144080 freebsd.amd64 (Jul  4 2021 15:58:50) release log
+00:00:00.000458 main     Log opened 2021-07-12T00:34:55.616101000Z
+00:00:00.000459 main     Build Type: release
+00:00:00.000471 main     OS Product: FreeBSD
+00:00:00.000476 main     OS Release: 13.0-RELEASE
+00:00:00.000480 main     OS Version: FreeBSD 13.0-RELEASE #0 releng/13.0-n244733-ea31abc261f: Fri Apr  9 04:24:09 UTC 2021     root@releng1.nyi.freebsd.org:/usr/obj/usr/src/amd64.amd64/sys/GENERIC
+00:00:00.000484 main     Firmware type: failed - VERR_NOT_SUPPORTED
+00:00:00.000507 main     Host RAM: 3843MB (3.7GB) total, 3171MB (3.0GB) available
+00:00:00.000513 main     Executable: /usr/local/lib/virtualbox/VBoxSVC
+00:00:00.000513 main     Process ID: 38961
+00:00:00.000514 main     Package type: BSD_64BITS_GENERIC (OSE)
+00:00:00.002366 main     IPC socket path: /tmp/.vbox-freebsd-ipc/ipcd
+00:00:00.111314 nspr-2   VirtualBox: object creation starts
+00:00:00.111415 nspr-2   Home directory: '/home/freebsd/.config/VirtualBox'
+00:00:00.111808 nspr-2   Loading settings file "/home/freebsd/.config/VirtualBox/VirtualBox.xml" with version "1.12-freebsd"
+00:00:01.140542 nspr-2   HostDnsMonitor: initializing
+00:00:01.140625 nspr-2   NAT: resolv.conf: nameserver 192.168.0.1
+00:00:01.140678 nspr-2   HostDnsMonitor: updating information
+00:00:01.140693 nspr-2   HostDnsMonitor: old information
+00:00:01.140697 nspr-2     no server entries
+00:00:01.140700 nspr-2     no domain set
+00:00:01.140702 nspr-2     no search string entries
+00:00:01.140704 nspr-2   HostDnsMonitor: new information
+00:00:01.140706 nspr-2     server 1: 192.168.0.1
+00:00:01.140708 nspr-2     domain: home
+00:00:01.140710 nspr-2     search string 1: home
+00:00:01.142111 nspr-2   HostPowerServiceLinux: DBus connection Error (Failed to connect to socket /var/run/dbus/system_bus_socket: No such file or directory)
+00:00:01.144844 nspr-2   failed to create vboxnet0, error (0x80004005)
+00:00:01.145306 nspr-2   VD: VDInit finished with VINF_SUCCESS
+00:00:01.145423 nspr-2   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={027bc463-929c-40e8-bf16-fea557cd8e7e} aComponent={SystemPropertiesWrap} aText={Cannot determine default Guest Additions ISO location. Most likely they are not available}, preserve=false aResultDetail=0
+00:00:01.145864 nspr-2   Loading settings file "/home/freebsd/Documents/vbox/NetBSD/NetBSD.vbox" with version "1.15-freebsd"
+00:00:01.146399 nspr-2   Loading settings file "/home/freebsd/Documents/vbox/bedrock linux/bedrock linux.vbox" with version "1.16-freebsd"
+00:00:01.146921 nspr-2   VirtualBox: object created
+00:00:15.688369 nspr-2   Saving settings file "/home/freebsd/.config/VirtualBox/VirtualBox.xml" with version "1.12-freebsd"
+00:03:24.846016 nspr-3   Saving settings file "/home/freebsd/.config/VirtualBox/VirtualBox.xml" with version "1.12-freebsd"
+00:03:25.152040 nspr-3   Saving settings file "/home/freebsd/.config/VirtualBox/VirtualBox.xml" with version "1.12-freebsd"
+00:03:25.199371 nspr-3   Saving settings file "/home/freebsd/.config/VirtualBox/VirtualBox.xml" with version "1.12-freebsd"
+00:03:25.208860 nspr-3   Saving settings file "/home/freebsd/.config/VirtualBox/VirtualBox.xml" with version "1.12-freebsd"
+00:03:30.816973 main     VirtualBox: object deletion starts
+00:03:30.817017 main     ERROR [COM]: aRC=VBOX_E_OBJECT_IN_USE (0x80bb000c) aIID={ad47ad09-787b-44ab-b343-a082a3f2dfb1} aComponent={MediumWrap} aText={Medium '/home/freebsd/Documents/vbox/NetBSD/NetBSD.vdi' cannot be closed because it is still attached to 1 virtual machines}, preserve=false aResultDetail=0
+00:03:30.817220 main     ERROR [COM]: aRC=VBOX_E_OBJECT_IN_USE (0x80bb000c) aIID={ad47ad09-787b-44ab-b343-a082a3f2dfb1} aComponent={MediumWrap} aText={Medium '/home/freebsd/Documents/vbox/bedrock linux/bedrock linux.vdi' cannot be closed because it is still attached to 1 virtual machines}, preserve=false aResultDetail=0
+00:03:30.817618 main     HostDnsMonitor: shutting down ...
+00:03:30.817625 main     HostDnsMonitor: shut down
+00:03:30.817657 main     {0000000802e70680} HostPowerServiceLinux::~HostPowerServiceLinux: RTThreadWait() for 5000 ms failed with VERR_INVALID_HANDLE
+00:03:30.817935 Watcher  ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={d0a0163f-e254-4e5b-a1f2-011cf991c38d} aComponent={VirtualBoxWrap} aText={The object is not ready}, preserve=false aResultDetail=0
+00:03:30.818062 main     VirtualBox: object deleted
