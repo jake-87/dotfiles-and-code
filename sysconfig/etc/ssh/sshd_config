@@ -88,10 +88,10 @@ AuthorizedKeysFile	.ssh/authorized_keys
 #AllowAgentForwarding yes
 #AllowTcpForwarding yes
 #GatewayPorts no
-#X11Forwarding yes
+X11Forwarding yes
 #X11DisplayOffset 10
-#X11UseLocalhost yes
-#PermitTTY yes
+X11UseLocalhost yes
+PermitTTY yes
 #PrintMotd yes
 #PrintLastLog yes
 #TCPKeepAlive yes
