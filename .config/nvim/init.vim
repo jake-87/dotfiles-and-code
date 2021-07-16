@@ -37,4 +37,5 @@ nmap W :noh<CR>
 colorscheme medic_chalk
 set background=dark
 autocmd BufEnter *.asm setfiletype nasm
+autocmd BufEnter *.h setfiletype c
 let g:airline_theme='deus'

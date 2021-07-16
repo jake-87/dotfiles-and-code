@@ -65,4 +65,5 @@ alias rg="ranger"
 alias feh="nomacs"
 fortune
 alias fex="find . | grep -v git | xargs grep"
+alias c="clear"
 alias pkgup="doas pkg update && doas pkg upgrade && doas pkg autoremove"
